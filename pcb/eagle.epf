@@ -7,21 +7,6 @@ Desktop="Desktop"
 [Globals]
 AutoSaveProject=1
 UsedLibraryUrn="urn:adsk.eagle:library:334"
-UsedLibraryUrn="urn:adsk.eagle:library:371"
-UsedLibrary="libraries/A4988SETTR-T.lbr"
-UsedLibrary="libraries/AMS1117-3.3.lbr"
-UsedLibrary="libraries/custom_frames.lbr"
-UsedLibrary="libraries/L-53GD.lbr"
-UsedLibrary="libraries/P6SMB6.8CA.lbr"
-UsedLibrary="libraries/PJ324M.lbr"
-UsedLibrary="libraries/PSPCAQ54.lbr"
-UsedLibrary="libraries/STM32F103C8T6.lbr"
-UsedLibrary="libraries/TESD5V0L1UC_RJG.lbr"
-UsedLibrary="libraries/TP4054-42-SOT25-R.lbr"
-UsedLibrary="libraries/TPS62147RGXR.lbr"
-UsedLibrary="libraries/TPS63031DSKR.lbr"
-UsedLibrary="libraries/TS-1187A-B-A-B.lbr"
-UsedLibrary="libraries/AMS1117-5.0.lbr"
 
 [Win_1]
 Type="Control Panel"
