@@ -25866,23 +25866,27 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="POWER_LED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
+<part name="POWER_LED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
+<attribute name="LCSC_PART" value="C2297"/>
+</part>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="500"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="68"/>
 <part name="RESET" library="TS-1187A-B-A-B" deviceset="TS-1187A-B-A-B" device="" value="">
 <attribute name="LCSC_PART" value="C318884"/>
 </part>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
+<part name="RED_LED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
+<attribute name="LCSC_PART" value="C84256"/>
+</part>
 <part name="S2" library="TS-1187A-B-A-B" deviceset="TS-1187A-B-A-B" device="">
 <attribute name="LCSC_PART" value="C318884"/>
 </part>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="500"/>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="68"/>
 <part name="IC1" library="TP4054-42-SOT25-R" deviceset="TP4054-42-SOT25-R" device="">
 <attribute name="LCSC_PART" value="C32574"/>
 </part>
@@ -25893,8 +25897,12 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="Q2" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" deviceset="NMOSFET_" device="_SOT23-GSD" package3d_urn="urn:adsk.eagle:package:28738/2" technology="BSS123" value="BSS123">
 <attribute name="LCSC_PART" value="C20917"/>
 </part>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
+<attribute name="LCSC_PART" value="C2297"/>
+</part>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
+<attribute name="LCSC_PART" value="C84256"/>
+</part>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="680"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="800k"/>
@@ -25927,7 +25935,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="FRAME4" library="custom_frames" deviceset="DINA4_L" device=""/>
 <part name="USB-B" library="Connector_USB" library_urn="urn:adsk.eagle:library:27510300" deviceset="61729-1011" device="" package3d_urn="urn:adsk.eagle:package:27659501/3"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k5 / 4k7"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1k5"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -25944,9 +25952,9 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </part>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="20"/>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="20"/>
-<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
-<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2"/>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC4" library="IC_Linear" library_urn="urn:adsk.eagle:library:16378340" deviceset="LM324" device="_SOIC" package3d_urn="urn:adsk.eagle:package:16378323/2">
 <attribute name="LCSC_PART" value="C71035"/>
@@ -25969,16 +25977,13 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="LEFT" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-12MM" package3d_urn="urn:adsk.eagle:package:40164/2"/>
 <part name="R33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND56" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U2" library="TPS613222ADBVR" deviceset="TPS613222ADBVR" device="">
 <attribute name="LCSC_PART" value="C2071163"/>
 </part>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22u"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L1" library="DFE252012P-4R7M=P2" deviceset="DFE252012P-4R7M=P2" device="" value="4.7u">
@@ -25992,7 +25997,6 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="B45181A" package3d_urn="urn:adsk.eagle:package:23316/1" value="10-100uF"/>
 <part name="U4" library="H-Brücke_BD622HFP-TR02" deviceset="BD6222HFP-TR" device="HRP7_ROM-M" value=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22u"/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10n"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -26001,7 +26005,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10n"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="120p"/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5"/>
+<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5R"/>
 <part name="SCHOTTKYDIODE0805" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="64Y" package3d_urn="urn:adsk.eagle:package:23750/1" value="100k"/>
@@ -26009,6 +26013,45 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="*317" device="EMP" package3d_urn="urn:adsk.eagle:package:28541/2">
 <attribute name="LCSC_PART" value="C6186"/>
 </part>
+<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22u">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C5672"/>
+</part>
+<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22u">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C5672"/>
+</part>
+<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22u">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C5672"/>
+</part>
+<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22u">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C5672"/>
+</part>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
+<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -26083,6 +26126,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="POWER_LED" gate="G$1" x="76.2" y="162.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.772" y="166.116" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="80.772" y="168.275" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_PART" x="76.2" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND3" gate="1" x="99.06" y="144.78" smashed="yes">
 <attribute name="VALUE" x="96.52" y="142.24" size="1.778" layer="96"/>
@@ -26107,9 +26151,10 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="GND4" gate="1" x="27.94" y="119.38" smashed="yes">
 <attribute name="VALUE" x="25.4" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="LED" gate="G$1" x="76.2" y="152.4" smashed="yes" rot="R90">
+<instance part="RED_LED" gate="G$1" x="76.2" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="80.772" y="155.956" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="80.772" y="158.115" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_PART" x="76.2" y="152.4" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="S2" gate="G$1" x="152.4" y="162.56" smashed="yes">
 <attribute name="NAME" x="149.86" y="165.1" size="1.27" layer="95"/>
@@ -26197,6 +26242,10 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </instance>
 <instance part="GND31" gate="1" x="152.4" y="68.58" smashed="yes">
 <attribute name="VALUE" x="149.86" y="66.04" size="1.778" layer="96"/>
+</instance>
+<instance part="R18" gate="G$1" x="35.56" y="71.12" smashed="yes">
+<attribute name="NAME" x="31.75" y="72.6186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="31.75" y="67.818" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -26416,7 +26465,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </net>
 <net name="PC13" class="0">
 <segment>
-<pinref part="LED" gate="G$1" pin="A"/>
+<pinref part="RED_LED" gate="G$1" pin="A"/>
 <wire x1="73.66" y1="152.4" x2="66.04" y2="152.4" width="0.1524" layer="91"/>
 <label x="66.04" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -26428,7 +26477,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="LED" gate="G$1" pin="C"/>
+<pinref part="RED_LED" gate="G$1" pin="C"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 </segment>
@@ -26567,9 +26616,9 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </net>
 <net name="SIGNAL_OPAMP" class="0">
 <segment>
-<wire x1="43.18" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<label x="38.1" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="PA1"/>
+<wire x1="30.48" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<label x="27.94" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="BUTTON_1" class="0">
@@ -26621,6 +26670,13 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <pinref part="U1" gate="G$1" pin="PA9"/>
 </segment>
 </net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="PA1"/>
+<wire x1="40.64" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -26649,9 +26705,9 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <wire x1="254" y1="167.64" x2="167.64" y2="167.64" width="0.2032" layer="98" style="shortdash"/>
 <text x="170.18" y="127" size="2.54" layer="98">5V --&gt; 3V3 ok</text>
 <wire x1="5.08" y1="106.68" x2="5.08" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="5.08" y1="50.8" x2="119.38" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="119.38" y1="50.8" x2="119.38" y2="106.68" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="119.38" y1="106.68" x2="5.08" y2="106.68" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="5.08" y1="50.8" x2="129.54" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="129.54" y1="50.8" x2="129.54" y2="106.68" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="129.54" y1="106.68" x2="5.08" y2="106.68" width="0.2032" layer="98" style="shortdash"/>
 <text x="7.62" y="53.34" size="2.54" layer="98">Voltage Boost Converter ok</text>
 </plain>
 <instances>
@@ -26681,10 +26737,12 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <instance part="LED1" gate="G$1" x="15.24" y="160.02" smashed="yes">
 <attribute name="NAME" x="18.796" y="155.448" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="20.955" y="155.448" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="15.24" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="LED2" gate="G$1" x="22.86" y="160.02" smashed="yes">
 <attribute name="NAME" x="26.416" y="155.448" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="28.575" y="155.448" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="22.86" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R7" gate="G$1" x="30.48" y="167.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="34.29" y="166.1414" size="1.778" layer="95" rot="R180"/>
@@ -26736,19 +26794,11 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="135.89" y="148.8186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="135.89" y="144.018" size="1.778" layer="96"/>
 </instance>
-<instance part="C21" gate="G$1" x="220.98" y="147.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="219.456" y="146.939" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="219.456" y="152.019" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND53" gate="1" x="208.28" y="137.16" smashed="yes">
 <attribute name="VALUE" x="205.74" y="134.62" size="1.778" layer="96"/>
 </instance>
 <instance part="GND54" gate="1" x="220.98" y="137.16" smashed="yes">
 <attribute name="VALUE" x="218.44" y="134.62" size="1.778" layer="96"/>
-</instance>
-<instance part="C22" gate="G$1" x="195.58" y="147.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="194.056" y="146.939" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="194.056" y="152.019" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND55" gate="1" x="195.58" y="137.16" smashed="yes">
 <attribute name="VALUE" x="193.04" y="134.62" size="1.778" layer="96"/>
@@ -26757,10 +26807,6 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="53.34" y="82.28" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="53.34" y="67.12" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 <attribute name="LCSC_PART" x="66.04" y="76.2" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C3" gate="G$1" x="96.52" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.996" y="70.739" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="94.996" y="75.819" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND6" gate="1" x="88.9" y="60.96" smashed="yes">
 <attribute name="VALUE" x="86.36" y="58.42" size="1.778" layer="96"/>
@@ -26772,10 +26818,6 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="29.21" y="82.55" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="34.29" y="82.55" size="1.778" layer="96" align="center-left"/>
 <attribute name="LCSC_PART" x="22.86" y="78.74" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C5" gate="G$1" x="17.78" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="16.256" y="70.739" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="16.256" y="75.819" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND28" gate="1" x="17.78" y="60.96" smashed="yes">
 <attribute name="VALUE" x="15.24" y="58.42" size="1.778" layer="96"/>
@@ -26796,6 +26838,34 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="200.66" y="163.195" size="1.778" layer="95"/>
 <attribute name="VALUE" x="200.66" y="160.655" size="1.778" layer="96"/>
 <attribute name="LCSC_PART" x="208.28" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C16" gate="G$1" x="17.78" y="73.66" smashed="yes">
+<attribute name="NAME" x="19.304" y="74.041" size="1.778" layer="95"/>
+<attribute name="VALUE" x="19.304" y="68.961" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="17.78" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C17" gate="G$1" x="96.52" y="73.66" smashed="yes">
+<attribute name="NAME" x="98.044" y="74.041" size="1.778" layer="95"/>
+<attribute name="VALUE" x="98.044" y="68.961" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="96.52" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C18" gate="G$1" x="220.98" y="149.86" smashed="yes">
+<attribute name="NAME" x="222.504" y="150.241" size="1.778" layer="95"/>
+<attribute name="VALUE" x="222.504" y="145.161" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="220.98" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C19" gate="G$1" x="195.58" y="149.86" smashed="yes">
+<attribute name="NAME" x="197.104" y="150.241" size="1.778" layer="95"/>
+<attribute name="VALUE" x="197.104" y="145.161" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="195.58" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R16" gate="G$1" x="109.22" y="78.74" smashed="yes">
+<attribute name="NAME" x="105.41" y="80.2386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="105.41" y="75.438" size="1.778" layer="96"/>
+</instance>
+<instance part="R17" gate="G$1" x="228.6" y="157.48" smashed="yes">
+<attribute name="NAME" x="224.79" y="158.9786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="224.79" y="154.178" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -26840,13 +26910,13 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </segment>
 <segment>
 <pinref part="GND54" gate="1" pin="GND"/>
-<pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="139.7" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND55" gate="1" pin="GND"/>
-<pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="139.7" x2="195.58" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="C19" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -26856,13 +26926,13 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="63.5" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
-<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="63.5" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -26879,10 +26949,10 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="78.74" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
 <label x="12.7" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="78.74" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="76.2" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
 <junction x="17.78" y="78.74"/>
+<pinref part="C16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -26969,42 +27039,25 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="C22" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="152.4" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="157.48" x2="198.12" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="157.48" x2="193.04" y2="157.48" width="0.1524" layer="91"/>
 <junction x="195.58" y="157.48"/>
 <label x="193.04" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="IC2" gate="A1" pin="VI"/>
+<pinref part="C19" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="VOUT"/>
-<wire x1="83.82" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="78.74" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
-<junction x="96.52" y="78.74"/>
-<label x="101.6" y="78.74" size="1.27" layer="95" xref="yes"/>
-<pinref part="SCHOTTKYDIODE0805" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="88.9" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
-<junction x="86.36" y="78.74"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="99.06" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<junction x="86.36" y="88.9"/>
+<wire x1="114.3" y1="78.74" x2="116.84" y2="78.74" width="0.1524" layer="91"/>
+<label x="116.84" y="78.74" size="1.27" layer="95" xref="yes"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<wire x1="218.44" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
-<label x="223.52" y="157.48" size="1.27" layer="95" xref="yes"/>
-<pinref part="IC2" gate="A1" pin="VO"/>
-<pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="220.98" y1="157.48" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="152.4" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
-<junction x="220.98" y="157.48"/>
+<wire x1="233.68" y1="157.48" x2="236.22" y2="157.48" width="0.1524" layer="91"/>
+<label x="236.22" y="157.48" size="1.27" layer="95" xref="yes"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -27056,6 +27109,37 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="VOUT"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="78.74" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="SCHOTTKYDIODE0805" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="88.9" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
+<junction x="86.36" y="78.74"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="99.06" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="99.06" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
+<junction x="86.36" y="88.9"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="76.2" x2="96.52" y2="78.74" width="0.1524" layer="91"/>
+<junction x="96.52" y="78.74"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="IC2" gate="A1" pin="VO"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="157.48" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="152.4" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
+<junction x="220.98" y="157.48"/>
 </segment>
 </net>
 </nets>
@@ -27499,6 +27583,11 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <wire x1="73.66" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
 <junction x="78.74" y="109.22"/>
 </segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="160.02" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
+<label x="200.66" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="SIGNAL_OPAMP" class="0">
 <segment>
@@ -27560,27 +27649,22 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <junction x="215.9" y="149.86"/>
 <pinref part="D2" gate="G$1" pin="2"/>
 </segment>
-<segment>
-<wire x1="200.66" y1="160.02" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
-<label x="200.66" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-</segment>
 </net>
 </nets>
 </sheet>
 <sheet>
 <description>Motor Steuerung / Signal Verarbeitung</description>
 <plain>
-<text x="15.24" y="22.86" size="2.54" layer="98">OPV: Vu = 1,1 - ∞ok</text>
+<text x="22.86" y="111.76" size="2.54" layer="98">OPV: Vu = 1,1 - ∞ok</text>
 <wire x1="114.3" y1="157.48" x2="114.3" y2="111.76" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="114.3" y1="111.76" x2="256.54" y2="111.76" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="256.54" y1="111.76" x2="256.54" y2="157.48" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="256.54" y1="157.48" x2="114.3" y2="157.48" width="0.2032" layer="98" style="shortdash"/>
 <text x="116.84" y="114.3" size="2.54" layer="98">DC MOTOR H-Bridge ok</text>
-<wire x1="147.32" y1="109.22" x2="147.32" y2="15.24" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="147.32" y1="15.24" x2="7.62" y2="15.24" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="7.62" y1="15.24" x2="7.62" y2="109.22" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="7.62" y1="109.22" x2="147.32" y2="109.22" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="106.68" y1="167.64" x2="106.68" y2="104.14" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="106.68" y1="104.14" x2="15.24" y2="104.14" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="15.24" y1="104.14" x2="15.24" y2="167.64" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="15.24" y1="167.64" x2="106.68" y2="167.64" width="0.2032" layer="98" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -27589,13 +27673,13 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="SHEET" x="248.92" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="180.34" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="IC4" gate="G$1" x="78.74" y="81.28" smashed="yes">
-<attribute name="NAME" x="78.74" y="96.52" size="1.778" layer="95" align="center"/>
-<attribute name="VALUE" x="78.74" y="66.04" size="1.778" layer="96" align="center"/>
-<attribute name="LCSC_PART" x="78.74" y="81.28" size="1.27" layer="96" display="off"/>
+<instance part="IC4" gate="G$1" x="38.1" y="137.16" smashed="yes">
+<attribute name="NAME" x="38.1" y="152.4" size="1.778" layer="95" align="center"/>
+<attribute name="VALUE" x="38.1" y="121.92" size="1.778" layer="96" align="center"/>
+<attribute name="LCSC_PART" x="38.1" y="137.16" size="1.27" layer="96" display="off"/>
 </instance>
-<instance part="GND36" gate="1" x="96.52" y="63.5" smashed="yes">
-<attribute name="VALUE" x="93.98" y="60.96" size="1.778" layer="96"/>
+<instance part="GND36" gate="1" x="55.88" y="119.38" smashed="yes">
+<attribute name="VALUE" x="53.34" y="116.84" size="1.778" layer="96"/>
 </instance>
 <instance part="D8" gate="1" x="149.86" y="137.16" smashed="yes">
 <attribute name="NAME" x="152.4" y="137.6426" size="1.778" layer="95"/>
@@ -27619,16 +27703,16 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <instance part="GND9" gate="1" x="160.02" y="116.84" smashed="yes">
 <attribute name="VALUE" x="157.48" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="GND38" gate="1" x="109.22" y="53.34" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="111.76" y="50.8" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND38" gate="1" x="68.58" y="109.22" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="71.12" y="106.68" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R14" gate="G$1" x="109.22" y="66.04" smashed="yes" rot="MR180">
-<attribute name="NAME" x="103.251" y="69.85" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="105.41" y="69.85" size="1.778" layer="96" rot="MR270"/>
+<instance part="R14" gate="G$1" x="68.58" y="121.92" smashed="yes" rot="MR180">
+<attribute name="NAME" x="62.611" y="125.73" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="64.77" y="125.73" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="R27" gate="G$1" x="109.22" y="88.9" smashed="yes" rot="MR270">
-<attribute name="NAME" x="107.7214" y="92.71" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="112.522" y="92.71" size="1.778" layer="96" rot="MR270"/>
+<instance part="R27" gate="G$1" x="68.58" y="144.78" smashed="yes" rot="MR270">
+<attribute name="NAME" x="67.0814" y="148.59" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="71.882" y="148.59" size="1.778" layer="96" rot="MR270"/>
 </instance>
 </instances>
 <busses>
@@ -27637,9 +27721,9 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <net name="GND" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="GND"/>
-<wire x1="91.44" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND36" gate="1" pin="GND"/>
-<wire x1="96.52" y1="66.04" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="121.92" x2="55.88" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="170.18" y1="134.62" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
@@ -27653,15 +27737,15 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="109.22" y1="55.88" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="111.76" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND38" gate="1" pin="GND"/>
 <pinref part="R14" gate="G$1" pin="E"/>
 <pinref part="R14" gate="G$1" pin="S"/>
-<wire x1="109.22" y1="58.42" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="66.04" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="58.42" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
-<junction x="109.22" y="58.42"/>
+<wire x1="68.58" y1="114.3" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="121.92" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="121.92" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<junction x="68.58" y="114.3"/>
 </segment>
 </net>
 <net name="MOTOR_PWM1" class="0">
@@ -27703,6 +27787,8 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <junction x="160.02" y="142.24"/>
 </segment>
 <segment>
+<pinref part="U4" gate="A" pin="VCC"/>
+<wire x1="205.74" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
 <label x="226.06" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
@@ -27720,12 +27806,6 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <label x="226.06" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="VCC"/>
-<wire x1="205.74" y1="139.7" x2="226.06" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PAD" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="EPAD"/>
@@ -27736,38 +27816,38 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="V+"/>
-<wire x1="66.04" y1="91.44" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="91.44" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
-<label x="60.96" y="96.52" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="25.4" y1="147.32" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="147.32" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
+<label x="20.32" y="152.4" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="SIGNAL_IN" class="0">
 <segment>
-<wire x1="91.44" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
-<label x="124.46" y="81.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="50.8" y1="137.16" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
+<label x="83.82" y="137.16" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC4" gate="G$1" pin="+IN3"/>
 </segment>
 </net>
 <net name="SIGNAL_OPAMP" class="0">
 <segment>
-<wire x1="109.22" y1="93.98" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
-<label x="124.46" y="76.2" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="121.92" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="96.52" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="149.86" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
+<label x="83.82" y="132.08" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="81.28" y1="132.08" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="152.4" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="OUT3"/>
-<wire x1="91.44" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
-<junction x="121.92" y="76.2"/>
+<wire x1="50.8" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
+<junction x="81.28" y="132.08"/>
 <pinref part="R27" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="109.22" y1="71.12" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="127" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="-IN3"/>
-<wire x1="109.22" y1="78.74" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
-<junction x="109.22" y="78.74"/>
+<wire x1="68.58" y1="134.62" x2="68.58" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="134.62" x2="68.58" y2="134.62" width="0.1524" layer="91"/>
+<junction x="68.58" y="134.62"/>
 <pinref part="R14" gate="G$1" pin="A"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 </segment>
