@@ -34,4 +34,6 @@ void loop() {
     // tell the screen to write “Arduino_uno_guy”  on the bottom row
     // you can change whats in the quotes to be what you want  it to be!
     lcd.print("5BEL");
+
+    Serial.println("Test");
 }
