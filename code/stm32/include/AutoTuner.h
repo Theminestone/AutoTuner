@@ -5,6 +5,10 @@
 #include <LiquidCrystal_I2C.h>
 #include <ezBuzzer.h>
 
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
 class LED {
 private:
     uint8_t _pin;
@@ -71,37 +75,71 @@ public:
 
     void reverse();
 
-    void breake();
+    void breakk();
 
     [[nodiscard]] uint8_t getFin() const;
 
     [[nodiscard]] uint8_t getRin() const;
-
 
 };
 
 class Signal {
 private:
     uint8_t _pin;
-    uint16_t _sample[500]{};
-    uint16_t _sample_size;
-    uint16_t _frequency;
+    std::vector<uint8_t> _wave;
+    uint16_t _cycle;
+    uint16_t _max_cycles;
     bool _ready{};
 
-    uint16_t readADC() const;
+    uint8_t _sample_rate; // in us
 
-    uint16_t processFrequency();
+    double _Pup;
+    double _Pdown;
+
+    uint16_t _xP1;
+    uint16_t _xP2;
+    uint16_t _xP3;
+    uint16_t _xP4;
+    uint16_t _xP5;
+    uint16_t _xP6;
+    uint16_t _xP7;
+    uint16_t _xP8;
+    uint16_t _xP9;
+    uint16_t _xP10;
+
+    double _deltaT1T3;
+    double   _deltaT3T5;
+    double   _deltaT5T7;
+    double   _deltaT7T9;
+
+    double   _deltaT2T4;
+    double   _deltaT4T6;
+    double   _deltaT6T8;
+    double   _deltaT8T10;
+
+    uint8_t _points; // for P calc
+
+    uint16_t _frequency;
 
 public:
-    explicit Signal(uint8_t pin);
+    explicit Signal(uint8_t pin, uint16_t max_cycles, uint8_t sample_rate);
 
-    uint16_t getSample(uint8_t i);
+    uint8_t getWave(uint8_t i);
 
     uint16_t getFrequency();
 
-    void createSample();
+    void createWave();
 
     bool isReady();
+
+    void clearVector();
+
+    uint32_t readADC();
+
+    void calcFrequency();
+
+    void calcPoints();
+
 };
 
 enum STATE {

@@ -14,9 +14,9 @@
 
 // Signal
 #define SIGNAL_IN PA1
+#define MAX_CYCLES 1000
+#define SAMPLE_RATE 100 // us
 
-// Sample
-#define SAMPLE_SIZE 1000
 
 // Battery
 #define BATTERY_LEVEL PA6

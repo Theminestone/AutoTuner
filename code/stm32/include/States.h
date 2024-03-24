@@ -21,7 +21,7 @@ void settings();
 
 void beep();
 
-void readADC();
+void read();
 
 void process();
 

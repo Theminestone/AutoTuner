@@ -34,7 +34,7 @@ bool Button::update() {
             _last_millis = millis();
             triggered = _debounce_update(value);
         } else
-            Serial.println("unwanted");
+//            Serial.println("unwanted");
         _last_value = value;
     }
     return triggered;

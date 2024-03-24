@@ -9,7 +9,7 @@ void setup() {
     Serial.begin(9600);
 
     state = IDLE;
-    sub_state = READ;
+    sub_state = WAIT;
 
     lcd.init();
     lcd.backlight();
@@ -17,51 +17,51 @@ void setup() {
 
     analogReadResolution(8); // adc 8bit?
 
-    timer->setOverflow(10000, HERTZ_FORMAT); // 100us
+    timer->setOverflow(SAMPLE_RATE, MICROSEC_FORMAT); // µs
 }
 
 
 void loop() {
     switch (state) {
         case IDLE:
+            sub_state = WAIT;
             idle();
             if (button_middle.update()) { state = TUNE_E1; }
             break;
         case TUNE_E1:
+            if (sub_state == WAIT) { sub_state = READ; }
             tune_e1();
-            if (button_right.update() && !button_left.update()) { state = TUNE_A; }
-            if (button_right.get() && button_left.get()) { state = SETTINGS; }
+//            if (button_right.update() && !button_left.update()) { state = TUNE_A; }
+//            if (button_right.update()) { state = SETTINGS; }
+
             break;
         case TUNE_A:
             tune_a();
-            if (button_right.update() && !button_left.update()) { state = TUNE_D; }
-            if (!button_right.update() && button_left.update()) { state = TUNE_E1; }
-//            if (button_right.update() && button_left.update()) { state = SETTINGS; }
+//            if (button_right.update() && !button_left.update()) { state = TUNE_D; }
+//            if (!button_right.update() && button_left.update()) { state = TUNE_E1; }
             break;
         case TUNE_D:
             tune_d();
-            if (button_right.update() && !button_left.update()) { state = TUNE_G; }
-            if (!button_right.update() && button_left.update()) { state = TUNE_A; }
-//            if (button_right.update() && button_left.update()) { state = SETTINGS; }
+//            if (button_right.update() && !button_left.update()) { state = TUNE_G; }
+//            if (!button_right.update() && button_left.update()) { state = TUNE_A; }
             break;
         case TUNE_G:
             tune_g();
-            if (button_right.update() && !button_left.update()) { state = TUNE_H; }
-            if (!button_right.update() && button_left.update()) { state = TUNE_D; }
-//            if (button_right.update() && button_left.update()) { state = SETTINGS; }
+//            if (button_right.update() && !button_left.update()) { state = TUNE_H; }
+//            if (!button_right.update() && button_left.update()) { state = TUNE_D; }
             break;
         case TUNE_H:
             tune_h();
-            if (button_right.update() && !button_left.update()) { state = TUNE_E2; }
-            if (!button_right.update() && button_left.update()) { state = TUNE_G; }
-//            if (button_right.update() && button_left.update()) { state = SETTINGS; }
+//            if (button_right.update() && !button_left.update()) { state = TUNE_E2; }
+//            if (!button_right.update() && button_left.update()) { state = TUNE_G; }
             break;
         case TUNE_E2:
             tune_e2();
-            if (!button_right.update() && button_left.update()) { state = TUNE_H; }
-//            if (button_right.update() && button_left.update()) { state = SETTINGS; }
+//            if (button_right.update() && !button_left.update()) { state = SETTINGS; }
+//            if (!button_right.update() && button_left.update()) { state = TUNE_H; }
             break;
         case SETTINGS:
+            sub_state = WAIT;
             settings();
             if (button_middle.update()) { state = IDLE; }
             break;
@@ -75,7 +75,7 @@ void loop() {
         switch (sub_state) {
             case READ:
                 timer->resume();
-                timer->attachInterrupt(readADC);
+                timer->attachInterrupt(read);
                 break;
             case PROCESS:
                 timer->pause();
@@ -85,5 +85,5 @@ void loop() {
                 break;
         }
     }
-    debug();
+//    debug();
 }

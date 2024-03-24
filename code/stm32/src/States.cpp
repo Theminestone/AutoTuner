@@ -3,8 +3,8 @@
 void idle() {
     lcd.clear();
     lcd.flush();
-    lcd_text_unten = "";
-    lcd_text_oben = "";
+    lcd_text_oben = "                ";
+    lcd_text_unten = "                ";
 
     led_indicator.blink();
     led_left.off();
@@ -14,14 +14,14 @@ void idle() {
 
 void tune_e1() {
     lcd_text_oben = "Tuning E1String:";
-    lcd_text_unten;
+    lcd_text_unten = "                ";
     lcd.setCursor(0, 0);
     lcd.print(lcd_text_oben);
     lcd.setCursor(0, 1);
     lcd.print(lcd_text_unten);
     lcd.write(1);
 
-    led_indicator.off();
+    led_indicator.on();
     led_left.blink();
     led_middle.blink();
     led_right.blink();
@@ -103,7 +103,7 @@ void tune_e2() {
 }
 
 void settings() {
-    lcd_text_oben = "Settings";
+    lcd_text_oben = "Settings        ";
     lcd_text_unten;
     lcd.setCursor(0, 0);
     lcd.print(lcd_text_oben);
@@ -119,24 +119,29 @@ void settings() {
 
 void beep() {}
 
-void readADC() {
-    signal_in.createSample();
-    if (signal_in.isReady()) {
+void read() {
+
+//    Serial.printf("%i, ", signal_in.readADC());
+    signal_in.createWave();
+    if (signal_in.isReady()) { // bis x samples
         sub_state = PROCESS;
     }
 }
 
 void process() {
-    for (int i = 0; i < 500; ++i) {
-        Serial.println(signal_in.getSample(i));
-    }
+//    for (int i = 0; i < MAX_CYCLES; ++i) {
+//        Serial.printf("%i, ", signal_in.getWave(i));
+//    }
+
+//    signal_in.clearVector();
+    signal_in.getFrequency();
     sub_state = READ;
 }
 
 void debug() {
-    Serial.printf("Button Left: %i\n", button_left.get());
-    Serial.printf("Button Middle: %i\n", button_middle.get());
-    Serial.printf("Button Right: %i\n\n", button_right.get());
+//    Serial.printf("Button Left: %i\n", button_left.get());
+//    Serial.printf("Button Middle: %i\n", button_middle.get());
+//    Serial.printf("Button Right: %i\n\n", button_right.get());
 //
 //    Serial.printf("Motor FIN %i\n", motor.getFin());
 //    Serial.printf("Motor RIN %i\n\n", motor.getRin());
@@ -147,9 +152,9 @@ void debug() {
 //    Serial.printf("LED Middle: %i\n\n", led_middle.get());
 //
 
-    Serial.printf("LCD_first: %s\n", lcd_text_oben.c_str());
-    Serial.printf("LCD_second: %s\n\n", lcd_text_unten.c_str());
-    Serial.printf("STATE: %i\n", state);
-    Serial.printf("SUB STATE: %i\n\n\n\n", sub_state);
+//    Serial.printf("LCD_first: %s\n", lcd_text_oben.c_str());
+//    Serial.printf("LCD_second: %s\n\n", lcd_text_unten.c_str());
+//    Serial.printf("STATE: %i\n", state);
+    Serial.printf("SUB STATE: %i\n\n", sub_state);
 }
 

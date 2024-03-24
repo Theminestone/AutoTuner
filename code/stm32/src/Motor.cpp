@@ -33,7 +33,7 @@ void Motor::reverse() {
     write();
 }
 
-void Motor::breake() {
+void Motor::breakk() {
     _fin = 1;
     _rin = 1;
     write();
