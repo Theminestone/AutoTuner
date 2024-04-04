@@ -8,6 +8,7 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
+#include <string>
 
 class LED {
 private:
@@ -39,22 +40,18 @@ public:
 class Button {
 private:
     uint8_t _pin;
-    uint16_t _debounce;
-    bool _toggle;
-    bool _on;
-    uint8_t _status;
-    uint8_t _last_value;
-    uint32_t _last_millis;
+    uint8_t _state;
+    uint8_t _currentState;
+    uint8_t _lastState;
+    uint16_t _debounceTime;
+    uint32_t _lastMillis;
 
-    bool _debounce_update(byte value);
+    bool read();
 
 public:
+    explicit Button(uint8_t pin, uint16_t debounceTime);
 
-    explicit Button(uint8_t pin, bool toggle = true, uint16_t debounce_milliseconds = 10, bool high_side = true);
-
-    bool update();
-
-    [[nodiscard]] uint8_t get() const;
+    bool get();
 };
 
 class Motor {
@@ -89,69 +86,67 @@ private:
     std::vector<uint8_t> _wave;
     uint16_t _cycle;
     uint16_t _max_cycles;
-    bool _ready{};
+    bool _ready = false;
 
     uint8_t _sample_rate; // in us
 
-    double _Pup;
-    double _Pdown;
+    double _pUP{};
+    double _pDOWN{};
 
-    uint16_t _xP1;
-    uint16_t _xP2;
-    uint16_t _xP3;
-    uint16_t _xP4;
-    uint16_t _xP5;
-    uint16_t _xP6;
-    uint16_t _xP7;
-    uint16_t _xP8;
-    uint16_t _xP9;
-    uint16_t _xP10;
+    uint16_t _xP1{};
+    uint16_t _xP2{};
+    uint16_t _xP3{};
+    uint16_t _xP4{};
+    uint16_t _xP5{};
+    uint16_t _xP6{};
+    uint16_t _xP7{};
+    uint16_t _xP8{};
+    uint16_t _xP9{};
+    uint16_t _xP10{};
 
-    double _deltaT1T3;
-    double   _deltaT3T5;
-    double   _deltaT5T7;
-    double   _deltaT7T9;
+    double _deltaT1T3{};
+    double _deltaT3T5{};
+    double _deltaT5T7{};
+    double _deltaT7T9{};
 
-    double   _deltaT2T4;
-    double   _deltaT4T6;
-    double   _deltaT6T8;
-    double   _deltaT8T10;
+    double _deltaT2T4{};
+    double _deltaT4T6{};
+    double _deltaT6T8{};
+    double _deltaT8T10{};
 
-    uint8_t _points; // for P calc
+    uint8_t _points{}; // for P calc
 
-    uint16_t _frequency;
+    double _frequency;
+
+    void calcPoints();
+
+    void clearVector();
 
 public:
     explicit Signal(uint8_t pin, uint16_t max_cycles, uint8_t sample_rate);
 
     uint8_t getWave(uint8_t i);
 
-    uint16_t getFrequency();
+    [[nodiscard]] double getFrequency() const;
 
     void createWave();
 
     bool isReady();
 
-    void clearVector();
-
-    uint32_t readADC();
-
     void calcFrequency();
 
-    void calcPoints();
-
+    [[nodiscard]] uint32_t readADC() const;
 };
 
 enum STATE {
     IDLE = 0,
-    TUNE_E1,
-    TUNE_A,
-    TUNE_D,
-    TUNE_G,
-    TUNE_H,
     TUNE_E2,
-    SETTINGS,
-    BEEP
+    TUNE_A2,
+    TUNE_D3,
+    TUNE_G3,
+    TUNE_H3,
+    TUNE_E4,
+    SETTINGS
 };
 
 enum SUB_STATE {

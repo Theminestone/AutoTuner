@@ -9,7 +9,7 @@ Signal::Signal(uint8_t pin, uint16_t max_cycles, uint8_t sample_rate) {
     pinMode(_pin, INPUT);
 }
 
-uint32_t Signal::readADC() {
+uint32_t Signal::readADC() const {
     return analogRead(_pin);
 }
 
@@ -38,8 +38,8 @@ void Signal::calcPoints() {
 //    auto min_value = *min_element(_wave.begin(), _wave.end());
     auto max_value = *max_element(_wave.begin(), _wave.end());
 
-    _Pup = max_value * 0.75;
-    _Pdown = max_value * 0.25;
+    _pUP = max_value * 0.75;
+    _pDOWN = max_value * 0.25;
 }
 
 void Signal::calcFrequency() {
@@ -47,47 +47,50 @@ void Signal::calcFrequency() {
     calcPoints();
 
     for (int i = 0; i < _wave.size(); ++i) {
-        if (_points == 0 && _wave[i] >= _Pup) {
+        if (_points == 0 && _wave[i] >= _pUP) {
             _xP1 = i;
             _points = 1;
         }
-        if (_points == 1 && _wave[i] <= _Pdown) {
+        if (_points == 1 && _wave[i] <= _pDOWN) {
             _xP2 = i;
             _points = 2;
         }
-        if (_points == 2 && _wave[i] >= _Pup) {
+        if (_points == 2 && _wave[i] >= _pUP) {
             _xP3 = i;
             _points = 3;
         }
-        if (_points == 3 && _wave[i] <= _Pdown) {
+        if (_points == 3 && _wave[i] <= _pDOWN) {
             _xP4 = i;
             _points = 4;
         }
-        if (_points == 4 && _wave[i] >= _Pup) {
+        if (_points == 4 && _wave[i] >= _pUP) {
             _xP5 = i;
             _points = 5;
         }
-        if (_points == 5 && _wave[i] <= _Pdown) {
+        if (_points == 5 && _wave[i] <= _pDOWN) {
             _xP6 = i;
             _points = 6;
         }
-        if (_points == 6 && _wave[i] >= _Pup) {
+        if (_points == 6 && _wave[i] >= _pUP) {
             _xP7 = i;
             _points = 7;
         }
-        if (_points == 7 && _wave[i] <= _Pdown) {
+        if (_points == 7 && _wave[i] <= _pDOWN) {
             _xP8 = i;
             _points = 8;
         }
-        if (_points == 8 && _wave[i] >= _Pup) {
+        if (_points == 8 && _wave[i] >= _pUP) {
             _xP9 = i;
             _points = 9;
         }
-        if (_points == 9 && _wave[i] <= _Pdown) {
+        if (_points == 9 && _wave[i] <= _pDOWN) {
             _xP10 = i;
             _points = 10;
         }
     }
+
+    _points = 0;
+
     _deltaT1T3 = _xP3 * _sample_rate - _xP1 * _sample_rate;
     _deltaT3T5 = _xP5 * _sample_rate - _xP3 * _sample_rate;
     _deltaT5T7 = _xP7 * _sample_rate - _xP5 * _sample_rate;
@@ -98,17 +101,17 @@ void Signal::calcFrequency() {
     _deltaT6T8 = _xP8 * _sample_rate - _xP6 * _sample_rate;
     _deltaT8T10 = _xP10 * _sample_rate - _xP8 * _sample_rate;
 
-    _frequency = (int) round(
-            (1 / (((_deltaT1T3 + _deltaT3T5 + _deltaT5T7 + _deltaT7T9 + _deltaT2T4 + _deltaT4T6 + _deltaT6T8 + _deltaT8T10) / 8) * 0.000001)));
+    if (_deltaT1T3 + _deltaT3T5 + _deltaT5T7 + _deltaT7T9 + _deltaT2T4 + _deltaT4T6 + _deltaT6T8 + _deltaT8T10 != 0) {
+        _frequency = 1 / (((_deltaT1T3 + _deltaT3T5 + _deltaT5T7 + _deltaT7T9 + _deltaT2T4 + _deltaT4T6 + _deltaT6T8 + _deltaT8T10) / 8) * 0.000001);
+    } else _frequency = 0;
+
+    clearVector();
 }
 
-uint16_t Signal::getFrequency() {
+double Signal::getFrequency() const {
 
-    calcFrequency();
-
-
-//    Serial.printf("Pup: %d\n", _Pup);
-//    Serial.printf("Pdown: %d\n", _Pdown);
+//    Serial.printf("Pup: %d\n", _pUP);
+//    Serial.printf("Pdown: %d\n", _pDOWN);
 //
 //    Serial.printf("xP1: %i\n", _xP1);
 //    Serial.printf("xP2: %i\n", _xP2);
@@ -133,12 +136,11 @@ uint16_t Signal::getFrequency() {
 //
 //    Serial.printf("points: %i\n", _points);
 
-    Serial.print("Frequenz: ");
-    Serial.print(_frequency);
-    Serial.println("Hz");
+//    Serial.print("Frequenz: ");
+//    Serial.print(_frequency);
+//    Serial.println("Hz");
 
-    clearVector();
-
+//    return round(_frequency);
     return _frequency;
 }
 

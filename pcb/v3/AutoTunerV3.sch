@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -32483,10 +32483,10 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <wire x1="172.72" y1="38.1" x2="213.36" y2="38.1" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="213.36" y1="38.1" x2="213.36" y2="81.28" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="213.36" y1="81.28" x2="172.72" y2="81.28" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="99.06" y1="124.46" x2="99.06" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="99.06" y1="50.8" x2="142.24" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="91.44" y1="124.46" x2="91.44" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="91.44" y1="50.8" x2="142.24" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="142.24" y1="50.8" x2="142.24" y2="124.46" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="142.24" y1="124.46" x2="99.06" y2="124.46" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="142.24" y1="124.46" x2="91.44" y2="124.46" width="0.2032" layer="98" style="shortdash"/>
 <text x="101.6" y="53.34" size="2.54" layer="98">Buzzer</text>
 </plain>
 <instances>

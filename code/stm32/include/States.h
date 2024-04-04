@@ -3,27 +3,33 @@
 
 #include "Globals.h"
 
-void idle();
-
-void tune_e1();
-
-void tune_a();
-
-void tune_d();
-
-void tune_g();
-
-void tune_h();
-
-void tune_e2();
-
-void settings();
-
-void beep();
-
 void read();
 
 void process();
+
+void idle();
+
+void tune_e2();
+
+void tune_a2();
+
+void tune_d3();
+
+void tune_g3();
+
+void tune_h3();
+
+void tune_e4();
+
+void settings();
+
+void toHigh();
+
+void toLow();
+
+void inTune();
+
+void writeLCD();
 
 void debug();
 

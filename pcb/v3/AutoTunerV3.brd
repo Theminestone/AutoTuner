@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="12.5" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="1.5625" altunitdist="mil" altunit="mil"/>
@@ -290,9 +290,9 @@
 <wire x1="18.5" y1="63.2225" x2="39.5" y2="63.2225" width="0.3048" layer="162"/>
 <wire x1="39.5" y1="63.2225" x2="39.5" y2="71.7225" width="0.3048" layer="162"/>
 <text x="44.3825" y="42.25" size="0.6096" layer="162">Buzzer</text>
-<text x="34.6075" y="4.8575" size="1.778" layer="1" ratio="12">Gabriel Unterweger
+<text x="34.6075" y="4.8575" size="1.778" layer="1" font="vector" ratio="12">Gabriel Unterweger
 AutoTuner - 5BEL - V3</text>
-<text x="34.6075" y="4.8575" size="1.778" layer="29" ratio="12">Gabriel Unterweger
+<text x="34.6075" y="4.8575" size="1.778" layer="29" font="vector" ratio="12">Gabriel Unterweger
 AutoTuner - 5BEL - V3</text>
 <rectangle x1="86.9902" y1="27.99023125" x2="96.9902" y2="28.00976875" layer="1"/>
 <rectangle x1="86.9902" y1="28.00976875" x2="96.9902" y2="28.0293" layer="1"/>
