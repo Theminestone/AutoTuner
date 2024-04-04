@@ -31017,7 +31017,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="20"/>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
-<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
+<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="60"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="OPV" library="IC_Linear" library_urn="urn:adsk.eagle:library:16378340" deviceset="LM324" device="_SOIC" package3d_urn="urn:adsk.eagle:package:16378323/2" value="">
 <attribute name="LCSC_PART" value="C71035"/>
@@ -31188,6 +31188,9 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2,5-6E" package3d_urn="urn:adsk.eagle:package:23430/1" value="100u"/>
 <part name="MOTOR" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-?-02" device="27-2021" package3d_urn="urn:adsk.eagle:package:8078645/1" value=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1">
+<attribute name="LCSC_PART" value="C2128"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -32483,10 +32486,10 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <wire x1="172.72" y1="38.1" x2="213.36" y2="38.1" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="213.36" y1="38.1" x2="213.36" y2="81.28" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="213.36" y1="81.28" x2="172.72" y2="81.28" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="91.44" y1="124.46" x2="91.44" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="91.44" y1="129.54" x2="91.44" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="91.44" y1="50.8" x2="142.24" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="142.24" y1="50.8" x2="142.24" y2="124.46" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="142.24" y1="124.46" x2="91.44" y2="124.46" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="142.24" y1="50.8" x2="142.24" y2="129.54" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="142.24" y1="129.54" x2="91.44" y2="129.54" width="0.2032" layer="98" style="shortdash"/>
 <text x="101.6" y="53.34" size="2.54" layer="98">Buzzer</text>
 </plain>
 <instances>
@@ -32713,7 +32716,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="TP_SIGNAL_NAME" x="57.15" y="16.51" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="T1" gate="G$1" x="129.54" y="78.74" smashed="yes">
-<attribute name="NAME" x="119.38" y="86.36" size="1.778" layer="95"/>
+<attribute name="NAME" x="127" y="81.28" size="1.778" layer="95"/>
 <attribute name="VALUE" x="119.38" y="83.82" size="1.778" layer="96"/>
 <attribute name="LCSC_PART" x="129.54" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
@@ -32721,13 +32724,13 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="115.57" y="80.2386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="115.57" y="75.438" size="1.778" layer="96"/>
 </instance>
-<instance part="R34" gate="G$1" x="132.08" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.5814" y="100.33" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="135.382" y="100.33" size="1.778" layer="96" rot="R90"/>
+<instance part="R34" gate="G$1" x="132.08" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="130.5814" y="105.41" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="135.382" y="105.41" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="BUZZER" gate="G$1" x="132.08" y="91.44" smashed="yes" rot="R270">
-<attribute name="NAME" x="138.43" y="95.25" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="128.905" y="95.25" size="1.778" layer="96" rot="R270"/>
+<instance part="BUZZER" gate="G$1" x="132.08" y="93.98" smashed="yes" rot="R270">
+<attribute name="NAME" x="138.43" y="97.79" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="128.905" y="97.79" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND7" gate="1" x="132.08" y="66.04" smashed="yes">
 <attribute name="VALUE" x="129.54" y="63.5" size="1.778" layer="96"/>
@@ -32738,6 +32741,11 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </instance>
 <instance part="MOTOR" gate="-2" x="226.06" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="223.52" y="109.982" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="D1" gate="G$1" x="121.92" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="121.4374" y="96.52" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="124.2314" y="96.52" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="121.92" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -32901,8 +32909,8 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </segment>
 <segment>
 <pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="109.22" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
-<label x="132.08" y="111.76" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="132.08" y1="114.3" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
+<label x="132.08" y="116.84" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="MOTORA" class="0">
@@ -33216,13 +33224,23 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="T1" gate="G$1" pin="C"/>
 <pinref part="BUZZER" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="83.82" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="86.36" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
+<junction x="132.08" y="86.36"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="121.92" y1="86.36" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$55" class="0">
 <segment>
 <pinref part="BUZZER" gate="G$1" pin="1"/>
 <pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="96.52" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="99.06" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="132.08" y1="101.6" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="96.52" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
+<junction x="132.08" y="101.6"/>
 </segment>
 </net>
 <net name="N$56" class="0">
