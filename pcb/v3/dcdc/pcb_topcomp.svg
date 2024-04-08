@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223.5px" height="264.1px" viewbox="0 0 223.5 264.1" version="1.1">
+  <title>TPS63070_BUCKBOOST_RNM_A_top: null</title>
+  <desc>TPS63070_BUCKBOOST_RNM_A WebTHERM&amp;reg; Board Layout file</desc>
+<defs>
+<g id="0805">
+  <g id="MASK" style="display:none;">
+  	<g style="display:inline;">
+  		<rect x="0.279" y="0.279" width="7.442" height="4.442"/>
+  		<path d="M7.442,0.558v3.884H0.558V0.558H7.442 M8,0H0v5h8V0L8,0z"/>
+  	</g>
+  </g>
+  <g id="COLOR">
+  	<rect style="fill:#CBCBCB;" width="8" height="5"/>
+  	<rect x="1.75" style="fill:#363636;" width="4.5" height="5"/>
+  </g>
+  <g id="OUTLINE" style="display:none;">
+  	<g style="display:inline;">
+  		<path d="M7.442,0.558v3.884H0.558V0.558H7.442 M8,0H0v5h8V0L8,0z"/>
+  	</g>
+  	<g style="display:inline;">
+  		<path d="M5.656,0.594v3.812H2.344V0.594H5.656 M6.25,0h-4.5v5h4.5V0L6.25,0z"/>
+  	</g>
+  </g>
+</g>
+<g id="0402">
+  <g id="MASK" display="none">
+  	<g display="inline">
+  		<rect x="0.125" y="0.125" width="3.752" height="1.757"/>
+  		<path d="M3.752,0.25v1.507H0.25V0.25H3.752 M4.002,0H0v2.007h4.002V0L4.002,0z"/>
+  	</g>
+  </g>
+  <g id="COLOR">
+  	<rect fill="#CBCBCB" width="4.002" height="2.007"/>
+  	<rect x="1.008" fill="#363636" width="1.986" height="2.007"/>
+  </g>
+  <g id="OUTLINE">
+  	<g>
+  		<path d="M3.752,0.25v1.507H0.25V0.25H3.752 M4.002,0H0v2.007h4.002V0L4.002,0z"/>
+  	</g>
+  	<g>
+  		<path d="M2.744,0.25v1.507H1.258V0.25H2.744 M2.994,0H1.008v2.007h1.986V0L2.994,0z"/>
+  	</g>
+  </g>
+</g>
+<g id="1210_280">
+  <g id="MASK" style="display:none;">
+  	<rect style="display:inline;" width="9.071" height="7.087"/>
+  	<rect x="1.701" style="display:inline;" width="5.669" height="7.087"/>
+  </g>
+  <g id="OUTLINE" style="display:none;">
+  	<g style="display:inline;">
+  		<path d="M8.571,0.5v6.087H0.5V0.5H8.571 M9.071,0H0v7.087h9.071V0L9.071,0z"/>
+  	</g>
+  	<g style="display:inline;">
+  		<path d="M6.87,0.5v6.087H2.201V0.5H6.87 M7.37,0H1.701v7.087H7.37V0L7.37,0z"/>
+  	</g>
+  </g>
+  <g id="COLOR">
+  	<rect style="fill:#CBCBCB;" width="9.071" height="7.087"/>
+  	<rect x="1.701" style="fill:#363636;" width="5.669" height="7.087"/>
+  </g>
+</g>
+<g id="0603">
+  <g id="Mask" style="display:none;">
+  	<rect style="display:inline;" width="6.4" height="3.2"/>
+  	<rect x="1.6" style="display:inline;" width="3.2" height="3.2"/>
+  </g>
+  <g id="Outline" style="display:none;">
+  	<g style="display:inline;">
+  		<path d="M6.15,0.25v2.7h-5.9v-2.7H6.15 M6.4,0H0v3.2h6.4V0L6.4,0z"/>
+  	</g>
+  	<g style="display:inline;">
+  		<path d="M4.55,0.25v2.7h-2.7v-2.7H4.55 M4.8,0H1.6v3.2h3.2V0L4.8,0z"/>
+  	</g>
+  </g>
+  <g id="Color">
+  	<rect style="fill:#B3B3B3;" width="6.4" height="3.2"/>
+  	<rect x="1.6" style="fill:#1A1A1A;" width="3.2" height="3.2"/>
+  </g>
+</g>
+<g id="0201">
+  <g id="Mask" display="none">
+  	<rect x="0.5" y="0.5" display="inline" stroke="#000000" width="2.4" height="1.2"/>
+  </g>
+  <g id="Color">
+  	<rect x="0.5" y="0.5" fill="#404040" stroke="#000000" width="2.4" height="1.2"/>
+  </g>
+  <g id="Outline" display="none">
+  	<rect x="0.5" y="0.5" display="inline" fill="none" stroke="#000000" width="2.4" height="1.2"/>
+  </g>
+</g>
+<g id="RNM0015A">
+  <g id="Mask" style="display:none;">
+  	<g style="display:inline;">
+  		<rect x="0.125" y="0.125" width="9.75" height="11.75"/>
+  		<path d="M9.75,0.25v11.5h-9.5V0.25H9.75 M10,0H0v12h10V0L10,0z"/>
+  	</g>
+  	<g style="display:inline;">
+  		<circle cx="1.484" cy="1.61" r="0.476"/>
+  		<path d="M1.484,1.259c0.193,0,0.351,0.157,0.351,0.351S1.677,1.961,1.484,1.961S1.133,1.804,1.133,1.61S1.29,1.259,1.484,1.259
+  			 M1.484,1.009c-0.332,0-0.601,0.269-0.601,0.601s0.269,0.601,0.601,0.601c0.332,0,0.601-0.269,0.601-0.601
+  			S1.816,1.009,1.484,1.009L1.484,1.009z"/>
+  	</g>
+  </g>
+  <g id="Outline" style="display:none;">
+  	<g style="display:inline;">
+  		<path d="M9.75,0.25v11.5h-9.5V0.25H9.75 M10,0H0v12h10V0L10,0z"/>
+  	</g>
+  	<g style="display:inline;">
+  		<path d="M1.484,1.259c0.193,0,0.351,0.157,0.351,0.351S1.677,1.961,1.484,1.961S1.133,1.804,1.133,1.61S1.29,1.259,1.484,1.259
+  			 M1.484,1.009c-0.332,0-0.601,0.269-0.601,0.601s0.269,0.601,0.601,0.601c0.332,0,0.601-0.269,0.601-0.601
+  			S1.816,1.009,1.484,1.009L1.484,1.009z"/>
+  	</g>
+  </g>
+  <g id="Color">
+  	<g>
+  		<rect x="0.125" y="0.125" style="fill:#4D4D4D;" width="9.75" height="11.75"/>
+  		<path d="M9.75,0.25v11.5h-9.5V0.25H9.75 M10,0H0v12h10V0L10,0z"/>
+  	</g>
+  	<g>
+  		<circle style="fill:#4D4D4D;" cx="1.484" cy="1.61" r="0.476"/>
+  		<path d="M1.484,1.259c0.193,0,0.351,0.157,0.351,0.351S1.677,1.961,1.484,1.961S1.133,1.804,1.133,1.61S1.29,1.259,1.484,1.259
+  			 M1.484,1.009c-0.332,0-0.601,0.269-0.601,0.601s0.269,0.601,0.601,0.601c0.332,0,0.601-0.269,0.601-0.601
+  			S1.816,1.009,1.484,1.009L1.484,1.009z"/>
+  	</g>
+  </g>
+</g>
+</defs>
+<g id="boardComps">
+  <g id="topview_images">
+    <use x="109.0" y="119.0" width="8.0" height="5.0" name="1_C1_0805" xlink:href="#0805" />
+    <use x="109.0" y="146.0" width="8.0" height="5.0" name="0_C2_0805" xlink:href="#0805" />
+    <use x="83.0" y="132.0" width="4.0" height="2.0" transform="rotate(-90.0 85.0 133.0)" name="12_Caux_0402" xlink:href="#0402" />
+    <use x="108.0" y="107.0" width="9.0" height="7.0" name="13_Cin_1210_280" xlink:href="#1210_280" />
+    <use x="108.0" y="166.0" width="9.0" height="7.0" name="14_Cout_1210_280" xlink:href="#1210_280" />
+    <use x="109.0" y="158.0" width="6.0" height="3.0" name="11_Coutx_0603" xlink:href="#0603" />
+    <rect x="120.0" y="18.0" width="6.0" height="6.0" transform="rotate(-270.0 123.0 21.0)" name="17_GND_TP-1502" style="fill:white;stroke:black;stroke-width:1;" />
+    <rect x="122.0" y="241.0" width="6.0" height="6.0" transform="rotate(-270.0 125.0 245.0)" name="19_GND1_TP-1502" style="fill:white;stroke:black;stroke-width:1;" />
+    <rect x="128.0" y="128.0" width="13.0" height="14.0" transform="rotate(-270.0 135.0 136.0)" name="7_L1_WE-MAIA_4020" style="fill:white;stroke:black;stroke-width:1;" />
+    <use x="80.0" y="115.0" width="3.0" height="2.0" name="20_Renable_0201" xlink:href="#0201" />
+    <use x="77.0" y="150.0" width="6.0" height="3.0" transform="rotate(-90.0 80.0 152.0)" name="9_Rfbb_0603" xlink:href="#0603" />
+    <use x="88.0" y="151.0" width="6.0" height="3.0" transform="rotate(-90.0 91.0 152.0)" name="8_Rfbt_0603" xlink:href="#0603" />
+    <use x="74.0" y="191.0" width="6.0" height="3.0" transform="rotate(-90.0 77.0 193.0)" name="3_Rpgood_0603" xlink:href="#0603" />
+    <rect x="12.0" y="123.0" width="6.0" height="6.0" transform="rotate(-270.0 15.0 126.0)" name="2_SYNC_TP-1502" style="fill:white;stroke:black;stroke-width:1;" />
+    <use x="97.0" y="130.0" width="10.0" height="12.0" name="10_U1_RNM0015A" xlink:href="#RNM0015A" />
+    <rect x="97.0" y="18.0" width="6.0" height="6.0" transform="rotate(-270.0 100.0 21.0)" name="16_VIN_TP-1502" style="fill:white;stroke:black;stroke-width:1;" />
+    <rect x="97.0" y="241.0" width="6.0" height="6.0" transform="rotate(-270.0 100.0 245.0)" name="18_VOUT_TP-1502" style="fill:white;stroke:black;stroke-width:1;" />
+  </g>
+</g>
+</svg>
