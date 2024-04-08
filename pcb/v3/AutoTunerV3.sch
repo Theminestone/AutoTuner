@@ -30986,10 +30986,10 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="STM32" library="STM32F103C8T6" deviceset="STM32F103C8T6" device="">
 <attribute name="LCSC_PART" value="C8734"/>
 </part>
-<part name="Y1" library="52101-101-REV-A_v16" library_urn="urn:adsk.eagle:library:21899384" deviceset="CRYSTAL_NX5032GA" device="" package3d_urn="urn:adsk.eagle:package:15662253/2" value="8MHz">
+<part name="QUARTZ" library="52101-101-REV-A_v16" library_urn="urn:adsk.eagle:library:21899384" deviceset="CRYSTAL_NX5032GA" device="" package3d_urn="urn:adsk.eagle:package:15662253/2" value="8MHz">
 <attribute name="LCSC_PART" value="C115962"/>
 </part>
-<part name="Q1" library="crystal-geyer_V1_0" library_urn="urn:adsk.eagle:library:203" deviceset="KX-327" device="-NHF" package3d_urn="urn:adsk.eagle:package:11937/1" value="32,768kHz">
+<part name="QUARTZ2" library="crystal-geyer_V1_0" library_urn="urn:adsk.eagle:library:203" deviceset="KX-327" device="-NHF" package3d_urn="urn:adsk.eagle:package:11937/1" value="32,768kHz">
 <attribute name="LCSC_PART" value="C32346"/>
 </part>
 <part name="ST_LINK" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="/90" package3d_urn="urn:adsk.eagle:package:22404/2"/>
@@ -31007,7 +31007,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="LCSC_PART" value="C17802"/>
+<attribute name="LCSC_PART" value="C17557"/>
 </part>
 <part name="RESET" library="TS-1187A-B-A-B" deviceset="TS-1187A-B-A-B" device="" value="">
 <attribute name="LCSC_PART" value="C318884"/>
@@ -31015,8 +31015,8 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100n"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="RED_LED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
-<attribute name="LCSC_PART" value="C84256"/>
+<part name="LED_INDICATOR" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
+<attribute name="LCSC_PART" value="C2296"/>
 </part>
 <part name="BOOT" library="TS-1187A-B-A-B" deviceset="TS-1187A-B-A-B" device="" value="">
 <attribute name="LCSC_PART" value="C318884"/>
@@ -31040,10 +31040,10 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2k2"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
+<part name="LED_CHARGE_GREEN" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
 <attribute name="LCSC_PART" value="C2297"/>
 </part>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
+<part name="LED_CHARGE_RED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2">
 <attribute name="LCSC_PART" value="C84256"/>
 </part>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="680"/>
@@ -31052,7 +31052,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100k"/>
-<part name="Q3" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" deviceset="PMOSFET_" device="_SOT23-GSD" package3d_urn="urn:adsk.eagle:package:28738/2" technology="BSS84" value="BSS84">
+<part name="P-CHANNEL" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" deviceset="PMOSFET_" device="_SOT23-GSD" package3d_urn="urn:adsk.eagle:package:28738/2" technology="BSS84" value="BSS84">
 <attribute name="LCSC_PARTS" value="C10487"/>
 </part>
 <part name="AUDIO_JACK" library="PJ324M" deviceset="PJ324M" device=""/>
@@ -31092,7 +31092,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="20"/>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="R31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
-<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="60"/>
+<part name="R32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="56"/>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="OPV" library="IC_Linear" library_urn="urn:adsk.eagle:library:16378340" deviceset="LM324" device="_SOIC" package3d_urn="urn:adsk.eagle:package:16378323/2" value="">
 <attribute name="LCSC_PART" value="C71035"/>
@@ -31119,8 +31119,8 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="BATTERIE2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-?-02" device="27-2021" package3d_urn="urn:adsk.eagle:package:8078645/1" value=""/>
-<part name="D8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
-<part name="D9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
+<part name="D_H-BRIDGE1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
+<part name="D_H-BRIDGE2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="H-BRUECKE" library="H-Brücke_BD622HFP-TR02" deviceset="BD6222HFP-TR" device="HRP7_ROM-M" value=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -31142,7 +31142,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="LCSC_PART" value="C5672"/>
+<attribute name="LCSC_PART" value="C12891"/>
 </part>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22u">
 <spice>
@@ -31151,7 +31151,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="LCSC_PART" value="C5672"/>
+<attribute name="LCSC_PART" value="C12891"/>
 </part>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="6k8"/>
@@ -31162,21 +31162,29 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="SCHOTTKY1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1">
 <attribute name="LCSC_PART" value="C191023"/>
 </part>
-<part name="Q2" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" deviceset="NMOSFET_" device="_SOT23-GSD" package3d_urn="urn:adsk.eagle:package:28738/2" technology="BSS123" value="BSS123">
+<part name="N-CHANNEL" library="Transistor" library_urn="urn:adsk.eagle:library:16378713" deviceset="NMOSFET_" device="_SOT23-GSD" package3d_urn="urn:adsk.eagle:package:28738/2" technology="BSS123" value="BSS123">
 <attribute name="LCSC_PART" value="C20917"/>
 </part>
 <part name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="TRIMMER" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-TRIMM" device="3339P" package3d_urn="urn:adsk.eagle:package:23757/1" value="?"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
-<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
-<part name="LED5" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
-<part name="LED6" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2">
+<attribute name="LCSC_PART" value="C2297"/>
+</part>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2">
+<attribute name="LCSC_PART" value="C2297"/>
+</part>
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2">
+<attribute name="LCSC_PART" value="C2297"/>
+</part>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2">
+<attribute name="LCSC_PART" value="C2297"/>
+</part>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
 <part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="100"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="/90" package3d_urn="urn:adsk.eagle:package:22404/2"/>
+<part name="EXTENSIONS" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="/90" package3d_urn="urn:adsk.eagle:package:22404/2"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="220k">
 <spice>
@@ -31204,7 +31212,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="SIGNAL_OPAMP" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="VBAT" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
 <part name="VBUS" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
-<part name="T1" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="*-NPN-" device="SOT23-EBC" package3d_urn="urn:adsk.eagle:package:28750/3">
+<part name="NPN" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="*-NPN-" device="SOT23-EBC" package3d_urn="urn:adsk.eagle:package:28750/3">
 <attribute name="LCSC_PART" value="C364312"/>
 </part>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k">
@@ -31256,7 +31264,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2,5-6E" package3d_urn="urn:adsk.eagle:package:23430/1" value="100u"/>
+<part name="C_H-BRIDGE" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2,5-6E" package3d_urn="urn:adsk.eagle:package:23430/1" value="100u"/>
 <part name="MOTOR" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-?-02" device="27-2021" package3d_urn="urn:adsk.eagle:package:8078645/1" value=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD323-R" package3d_urn="urn:adsk.eagle:package:43437/1">
 <attribute name="LCSC_PART" value="C2128"/>
@@ -31353,12 +31361,12 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <attribute name="VALUE" x="48.26" y="12.7" size="1.778" layer="96"/>
 <attribute name="LCSC_PART" x="68.58" y="53.34" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="Y1" gate="G$1" x="231.14" y="111.76" smashed="yes" rot="R90">
+<instance part="QUARTZ" gate="G$1" x="231.14" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="230.124" y="114.3" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="233.68" y="114.3" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC_PART" x="231.14" y="111.76" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="Q1" gate="G$1" x="233.68" y="66.04" smashed="yes" rot="R90">
+<instance part="QUARTZ2" gate="G$1" x="233.68" y="66.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="232.41" y="69.85" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="236.22" y="69.85" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC_PART" x="233.68" y="66.04" size="1.778" layer="96" rot="R90" display="off"/>
@@ -31406,7 +31414,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <instance part="GND4" gate="1" x="27.94" y="119.38" smashed="yes">
 <attribute name="VALUE" x="25.4" y="116.84" size="1.778" layer="96"/>
 </instance>
-<instance part="RED_LED" gate="G$1" x="86.36" y="152.4" smashed="yes" rot="R90">
+<instance part="LED_INDICATOR" gate="G$1" x="86.36" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.932" y="155.956" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="90.932" y="158.115" size="1.778" layer="96" rot="R180"/>
 <attribute name="LCSC_PART" x="86.36" y="152.4" size="1.778" layer="96" rot="R90" display="off"/>
@@ -31611,7 +31619,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <pinref part="POWER_LED" gate="G$1" pin="C"/>
 <wire x1="99.06" y1="152.4" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="162.56" x2="99.06" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="RED_LED" gate="G$1" pin="C"/>
+<pinref part="LED_INDICATOR" gate="G$1" pin="C"/>
 <wire x1="91.44" y1="152.4" x2="99.06" y2="152.4" width="0.1524" layer="91"/>
 <junction x="99.06" y="152.4"/>
 </segment>
@@ -31724,7 +31732,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="2"/>
+<pinref part="QUARTZ" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="119.38" x2="231.14" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="116.84" x2="241.3" y2="119.38" width="0.1524" layer="91"/>
@@ -31742,7 +31750,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 </net>
 <net name="OSCOUT" class="0">
 <segment>
-<pinref part="Y1" gate="G$1" pin="1"/>
+<pinref part="QUARTZ" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="109.22" x2="231.14" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
@@ -31765,7 +31773,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="73.66" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="68.58" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="2"/>
+<pinref part="QUARTZ2" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="73.66" x2="243.84" y2="73.66" width="0.1524" layer="91"/>
 <junction x="233.68" y="73.66"/>
 <label x="246.38" y="73.66" size="1.27" layer="95" xref="yes"/>
@@ -31785,7 +31793,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 <wire x1="233.68" y1="58.42" x2="233.68" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="58.42" x2="233.68" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="1"/>
+<pinref part="QUARTZ2" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="58.42" x2="243.84" y2="58.42" width="0.1524" layer="91"/>
 <junction x="233.68" y="58.42"/>
 <label x="246.38" y="58.42" size="1.27" layer="95" xref="yes"/>
@@ -31938,7 +31946,7 @@ Source: http://www2.produktinfo.conrad.com/datenblaetter/700000-724999/705152-da
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="RED_LED" gate="G$1" pin="A"/>
+<pinref part="LED_INDICATOR" gate="G$1" pin="A"/>
 <wire x1="83.82" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
@@ -32009,12 +32017,12 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="74.7014" y="135.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="79.502" y="135.89" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED1" gate="G$1" x="15.24" y="165.1" smashed="yes">
+<instance part="LED_CHARGE_GREEN" gate="G$1" x="15.24" y="165.1" smashed="yes">
 <attribute name="NAME" x="18.796" y="160.528" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="20.955" y="160.528" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC_PART" x="15.24" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="LED2" gate="G$1" x="22.86" y="165.1" smashed="yes">
+<instance part="LED_CHARGE_RED" gate="G$1" x="22.86" y="165.1" smashed="yes">
 <attribute name="NAME" x="26.416" y="160.528" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="28.575" y="160.528" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC_PART" x="22.86" y="165.1" size="1.778" layer="96" display="off"/>
@@ -32041,7 +32049,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="211.8614" y="82.55" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="216.662" y="82.55" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="Q3" gate="G$1" x="215.9" y="101.6" smashed="yes" rot="R90">
+<instance part="P-CHANNEL" gate="G$1" x="215.9" y="101.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="212.09" y="100.33" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="219.71" y="95.25" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC_PARTS" x="215.9" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
@@ -32109,7 +32117,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="VALUE" x="228.3714" y="101.6" size="1.778" layer="96" rot="R90"/>
 <attribute name="LCSC_PART" x="226.06" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="Q2" gate="G$1" x="17.78" y="152.4" smashed="yes" rot="MR0">
+<instance part="N-CHANNEL" gate="G$1" x="17.78" y="152.4" smashed="yes" rot="MR0">
 <attribute name="NAME" x="11.43" y="156.21" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="16.51" y="156.21" size="1.778" layer="96" rot="MR90"/>
 <attribute name="LCSC_PART" x="17.78" y="152.4" size="1.27" layer="96" rot="MR0" display="off"/>
@@ -32209,7 +32217,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="15.24" y1="147.32" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
+<pinref part="N-CHANNEL" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -32325,8 +32333,8 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="LED_CHARGE_GREEN" gate="G$1" pin="A"/>
+<pinref part="LED_CHARGE_RED" gate="G$1" pin="A"/>
 <junction x="22.86" y="167.64"/>
 <wire x1="25.4" y1="167.64" x2="22.86" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="167.64" x2="15.24" y2="167.64" width="0.1524" layer="91"/>
@@ -32341,18 +32349,18 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <wire x1="38.1" y1="149.86" x2="22.86" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="152.4" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
 <junction x="38.1" y="149.86"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="LED_CHARGE_RED" gate="G$1" pin="C"/>
 <wire x1="22.86" y1="160.02" x2="22.86" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="G"/>
+<pinref part="N-CHANNEL" gate="G$1" pin="G"/>
 <wire x1="20.32" y1="149.86" x2="22.86" y2="149.86" width="0.1524" layer="91"/>
 <junction x="22.86" y="149.86"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED_CHARGE_GREEN" gate="G$1" pin="C"/>
 <wire x1="15.24" y1="160.02" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
+<pinref part="N-CHANNEL" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -32364,7 +32372,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <segment>
 <wire x1="210.82" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
 <label x="205.74" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="Q3" gate="G$1" pin="S"/>
+<pinref part="P-CHANNEL" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
@@ -32422,7 +32430,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <junction x="213.36" y="93.98"/>
 <wire x1="213.36" y1="93.98" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
 <label x="205.74" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="Q3" gate="G$1" pin="G"/>
+<pinref part="P-CHANNEL" gate="G$1" pin="G"/>
 <wire x1="213.36" y1="99.06" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SCHOTTKY1" gate="G$1" pin="A"/>
 </segment>
@@ -32541,7 +32549,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="D"/>
+<pinref part="P-CHANNEL" gate="G$1" pin="D"/>
 <wire x1="220.98" y1="104.14" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SCHOTTKY1" gate="G$1" pin="C"/>
 <wire x1="226.06" y1="101.6" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
@@ -32683,15 +32691,15 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="VALUE" x="229.87" y="151.638" size="1.778" layer="96"/>
 </instance>
 <instance part="R30" gate="G$1" x="144.78" y="35.56" smashed="yes" rot="R180">
-<attribute name="NAME" x="148.59" y="34.0614" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="143.51" y="39.1414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="148.59" y="38.862" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R31" gate="G$1" x="144.78" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="148.59" y="26.4414" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="143.51" y="31.5214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="148.59" y="31.242" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R32" gate="G$1" x="144.78" y="20.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="148.59" y="18.8214" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="143.51" y="23.9014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="148.59" y="23.622" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND37" gate="1" x="154.94" y="12.7" smashed="yes">
@@ -32757,21 +32765,25 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="243.84" y="85.725" size="1.778" layer="95"/>
 <attribute name="VALUE" x="243.84" y="72.39" size="1.778" layer="96"/>
 </instance>
-<instance part="LED3" gate="G$1" x="57.15" y="154.94" smashed="yes" rot="R90">
+<instance part="LED1" gate="G$1" x="57.15" y="154.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="61.722" y="158.496" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="61.722" y="160.655" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_PART" x="57.15" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="LED4" gate="G$1" x="57.15" y="149.86" smashed="yes" rot="R90">
+<instance part="LED3" gate="G$1" x="57.15" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="61.722" y="153.416" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="61.722" y="155.575" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_PART" x="57.15" y="149.86" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="LED5" gate="G$1" x="64.77" y="147.32" smashed="yes" rot="R90">
+<instance part="LED4" gate="G$1" x="64.77" y="147.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="69.342" y="150.876" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="69.342" y="153.035" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_PART" x="64.77" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="LED6" gate="G$1" x="64.77" y="152.4" smashed="yes" rot="R90">
+<instance part="LED2" gate="G$1" x="64.77" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="69.342" y="155.956" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="69.342" y="158.115" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_PART" x="64.77" y="152.4" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R14" gate="G$1" x="35.56" y="154.94" smashed="yes">
 <attribute name="NAME" x="31.75" y="156.4386" size="1.778" layer="95"/>
@@ -32789,7 +32801,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="31.75" y="148.8186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="31.75" y="144.018" size="1.778" layer="96"/>
 </instance>
-<instance part="JP2" gate="A" x="50.8" y="168.91" smashed="yes" rot="R90">
+<instance part="EXTENSIONS" gate="A" x="50.8" y="168.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.545" y="162.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="58.42" y="162.56" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -32834,7 +32846,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="59.69" y="24.13" size="1.778" layer="95" rot="R270"/>
 <attribute name="TP_SIGNAL_NAME" x="57.15" y="16.51" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="T1" gate="G$1" x="129.54" y="78.74" smashed="yes">
+<instance part="NPN" gate="G$1" x="129.54" y="78.74" smashed="yes">
 <attribute name="NAME" x="127" y="81.28" size="1.778" layer="95"/>
 <attribute name="VALUE" x="119.38" y="83.82" size="1.778" layer="96"/>
 <attribute name="LCSC_PART" x="129.54" y="78.74" size="1.778" layer="96" display="off"/>
@@ -32963,17 +32975,17 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="72.39" y1="143.51" x2="72.39" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="69.85" y1="147.32" x2="72.39" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 <junction x="72.39" y="147.32"/>
 <wire x1="72.39" y1="147.32" x2="72.39" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="72.39" y1="149.86" x2="72.39" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="69.85" y1="152.4" x2="72.39" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="LED6" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="72.39" y1="152.4" x2="72.39" y2="154.94" width="0.1524" layer="91"/>
 <junction x="72.39" y="152.4"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="72.39" y1="154.94" x2="62.23" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="62.23" y1="149.86" x2="72.39" y2="149.86" width="0.1524" layer="91"/>
 <junction x="72.39" y="149.86"/>
 </segment>
@@ -32984,7 +32996,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="E"/>
+<pinref part="NPN" gate="G$1" pin="E"/>
 <wire x1="132.08" y1="73.66" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
@@ -33269,9 +33281,9 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <net name="N$39" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="EXTENSIONS" gate="A" pin="1"/>
 <wire x1="45.72" y1="154.94" x2="54.61" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="166.37" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
 <junction x="45.72" y="154.94"/>
@@ -33280,9 +33292,9 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <net name="N$48" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="152.4" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="EXTENSIONS" gate="A" pin="2"/>
 <wire x1="48.26" y1="152.4" x2="62.23" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="166.37" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
 <junction x="48.26" y="152.4"/>
@@ -33290,10 +33302,10 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </net>
 <net name="N$49" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="54.61" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="EXTENSIONS" gate="A" pin="3"/>
 <wire x1="50.8" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="166.37" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
 <junction x="50.8" y="149.86"/>
@@ -33302,9 +33314,9 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <net name="N$50" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
-<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="A" pin="4"/>
+<pinref part="EXTENSIONS" gate="A" pin="4"/>
 <wire x1="53.34" y1="147.32" x2="62.23" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="166.37" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
 <junction x="53.34" y="147.32"/>
@@ -33340,7 +33352,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </net>
 <net name="N$54" class="0">
 <segment>
-<pinref part="T1" gate="G$1" pin="C"/>
+<pinref part="NPN" gate="G$1" pin="C"/>
 <pinref part="BUZZER" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="83.82" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="86.36" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
@@ -33365,7 +33377,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <net name="N$56" class="0">
 <segment>
 <pinref part="R28" gate="G$1" pin="2"/>
-<pinref part="T1" gate="G$1" pin="B"/>
+<pinref part="NPN" gate="G$1" pin="B"/>
 <wire x1="124.46" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -33407,11 +33419,11 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <instance part="GND36" gate="1" x="55.88" y="58.42" smashed="yes">
 <attribute name="VALUE" x="53.34" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="D8" gate="1" x="149.86" y="137.16" smashed="yes">
+<instance part="D_H-BRIDGE1" gate="1" x="149.86" y="137.16" smashed="yes">
 <attribute name="NAME" x="152.4" y="137.6426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="152.4" y="134.8486" size="1.778" layer="96"/>
 </instance>
-<instance part="D9" gate="1" x="213.36" y="134.62" smashed="yes" rot="R180">
+<instance part="D_H-BRIDGE2" gate="1" x="213.36" y="134.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="210.82" y="134.1374" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="210.82" y="136.9314" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -33447,7 +33459,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <instance part="GND26" gate="1" x="80.01" y="50.8" smashed="yes">
 <attribute name="VALUE" x="77.47" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="C4" gate="G$1" x="160.02" y="132.08" smashed="yes">
+<instance part="C_H-BRIDGE" gate="G$1" x="160.02" y="132.08" smashed="yes">
 <attribute name="NAME" x="161.163" y="132.5626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="161.163" y="127.4826" size="1.778" layer="96"/>
 </instance>
@@ -33475,7 +33487,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <segment>
 <wire x1="160.02" y1="127" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="-"/>
+<pinref part="C_H-BRIDGE" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <wire x1="68.58" y1="53.34" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
@@ -33496,21 +33508,21 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </net>
 <net name="MOTOR_PWM1" class="0">
 <segment>
-<pinref part="D8" gate="1" pin="A"/>
+<pinref part="D_H-BRIDGE1" gate="1" pin="A"/>
 <wire x1="147.32" y1="137.16" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
 <label x="139.7" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOTOR_PWM2" class="0">
 <segment>
-<pinref part="D9" gate="1" pin="A"/>
+<pinref part="D_H-BRIDGE2" gate="1" pin="A"/>
 <wire x1="215.9" y1="134.62" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
 <label x="226.06" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="D8" gate="1" pin="C"/>
+<pinref part="D_H-BRIDGE1" gate="1" pin="C"/>
 <wire x1="152.4" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="H-BRUECKE" gate="A" pin="FIN"/>
 </segment>
@@ -33518,7 +33530,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <net name="N$14" class="0">
 <segment>
 <wire x1="205.74" y1="134.62" x2="210.82" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="D9" gate="1" pin="C"/>
+<pinref part="D_H-BRIDGE2" gate="1" pin="C"/>
 <pinref part="H-BRUECKE" gate="A" pin="RIN"/>
 </segment>
 </net>
@@ -33530,7 +33542,7 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="H-BRUECKE" gate="A" pin="VREF"/>
 <wire x1="160.02" y1="142.24" x2="139.7" y2="142.24" width="0.1524" layer="91"/>
 <junction x="160.02" y="142.24"/>
-<pinref part="C4" gate="G$1" pin="+"/>
+<pinref part="C_H-BRIDGE" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <pinref part="H-BRUECKE" gate="A" pin="VCC"/>
