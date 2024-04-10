@@ -3,6 +3,7 @@
 
 #include "AutoTuner.h"
 #include "Constants.h"
+#include "STATE.h"
 
 extern LiquidCrystal_I2C lcd;
 
@@ -22,6 +23,8 @@ extern Signal signal_in;
 extern String lcd_text_oben;
 extern String lcd_text_unten;
 
-extern STATE state;
-extern SUB_STATE sub_state;
+extern MAIN_STATE mainState;
+extern SIGNAL_STATE signalState;
+extern SETTINGS_STATE settingsState;
+
 #endif //STM32_GLOBALS_H

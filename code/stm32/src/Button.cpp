@@ -14,7 +14,7 @@ Button::Button(uint8_t pin, uint16_t debounceTime) {
 
 bool Button::read() {
     _currentState = digitalRead(_pin);
-    if (_currentState != _lastState) _lastMillis = millis();
+    if (_currentState != _lastState) { _lastMillis = millis(); }
     if ((millis() - _lastMillis) > _debounceTime) {
         if (_currentState != _state) {
             _state = _currentState;
@@ -26,8 +26,5 @@ bool Button::read() {
 }
 
 bool Button::get() {
-    if (read() && _state == HIGH) {
-        return true;
-    }
-    return false;
+    return read() && _state == HIGH;
 }

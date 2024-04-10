@@ -1,21 +1,4 @@
-#include "States.h"
-
-void read() {
-
-//    Serial.printf("%i, ", signal_in.readADC());
-    signal_in.createWave();
-    if (signal_in.isReady()) { // bis x samples
-        sub_state = PROCESS;
-    }
-}
-
-void process() {
-//    for (int i = 0; i < MAX_CYCLES; ++i) {
-//        Serial.printf("%i, ", signal_in.getWave(i));
-//    }
-    signal_in.calcFrequency();
-    sub_state = READ;
-}
+#include "MainStates.h"
 
 void idle() {
     lcd_text_oben = "                ";
@@ -35,105 +18,102 @@ void tune_e2() {
     lcd_text_oben = "Tuning E2: ...";
     lcd_text_unten = String(signal_in.getFrequency()) + "Hz->" + E2 + "Hz";
 
+    writeLCD();
+
     if (signal_in.getFrequency() > 0) {
-        if (signal_in.getFrequency() > E2 + TOLERANZ) {
+        if (signal_in.getFrequency() > E2 + signal_in.getTolerance()) {
             toHigh();
-        } else if (signal_in.getFrequency() < E2 - TOLERANZ) {
+        } else if (signal_in.getFrequency() < E2 - signal_in.getTolerance()) {
             toLow();
         } else {
             inTune();
         }
     }
-    writeLCD();
 }
 
 void tune_a2() {
     lcd_text_oben = "Tuning A2: ...";
     lcd_text_unten = String(signal_in.getFrequency()) + "Hz->" + A2 + "Hz";
 
+    writeLCD();
+
     if (signal_in.getFrequency() > 0) {
-        if (signal_in.getFrequency() > A2 + TOLERANZ) {
+        if (signal_in.getFrequency() > A2 + signal_in.getTolerance()) {
             toHigh();
-        } else if (signal_in.getFrequency() < A2 - TOLERANZ) {
+        } else if (signal_in.getFrequency() < A2 - signal_in.getTolerance()) {
             toLow();
         } else {
             inTune();
         }
     } else { inTune(); }
-    writeLCD();
 }
 
 void tune_d3() {
     lcd_text_oben = "Tuning D3: ...";
     lcd_text_unten = String(signal_in.getFrequency()) + "Hz->" + D3 + "Hz";
 
+    writeLCD();
+
     if (signal_in.getFrequency() > 0) {
-        if (signal_in.getFrequency() > D3 + TOLERANZ) {
+        if (signal_in.getFrequency() > D3 + signal_in.getTolerance()) {
             toHigh();
-        } else if (signal_in.getFrequency() < D3 - TOLERANZ) {
+        } else if (signal_in.getFrequency() < D3 - signal_in.getTolerance()) {
             toLow();
         } else {
             inTune();
         }
     }
-    writeLCD();
 }
 
 void tune_g3() {
     lcd_text_oben = "Tuning G3: ...";
     lcd_text_unten = String(signal_in.getFrequency()) + "Hz->" + G3 + "Hz";
 
+    writeLCD();
+
     if (signal_in.getFrequency() > 0) {
-        if (signal_in.getFrequency() > G3 + TOLERANZ) {
+        if (signal_in.getFrequency() > G3 + signal_in.getTolerance()) {
             toHigh();
-        } else if (signal_in.getFrequency() < G3 - TOLERANZ) {
+        } else if (signal_in.getFrequency() < G3 - signal_in.getTolerance()) {
             toLow();
         } else {
             inTune();
         }
     }
-    writeLCD();
 }
 
 void tune_h3() {
     lcd_text_oben = "Tuning H3: ...";
     lcd_text_unten = String(signal_in.getFrequency()) + "Hz->" + H3 + "Hz";
 
+    writeLCD();
+
     if (signal_in.getFrequency() > 0) {
-        if (signal_in.getFrequency() > H3 + TOLERANZ) {
+        if (signal_in.getFrequency() > H3 + signal_in.getTolerance()) {
             toHigh();
-        } else if (signal_in.getFrequency() < H3 - TOLERANZ) {
+        } else if (signal_in.getFrequency() < H3 - signal_in.getTolerance()) {
             toLow();
         } else {
             inTune();
         }
     }
-    writeLCD();
 }
 
 void tune_e4() {
     lcd_text_oben = "Tuning E4: ...";
     lcd_text_unten = String(signal_in.getFrequency()) + "Hz->" + E4 + "Hz";
 
+    writeLCD();
+
     if (signal_in.getFrequency() > 0) {
-        if (signal_in.getFrequency() > E4 + TOLERANZ) {
+        if (signal_in.getFrequency() > E4 + signal_in.getTolerance()) {
             toHigh();
-        } else if (signal_in.getFrequency() < E4 - TOLERANZ) {
+        } else if (signal_in.getFrequency() < E4 - signal_in.getTolerance()) {
             toLow();
         } else {
             inTune();
         }
     }
-    writeLCD();
-}
-
-void settings() {
-    lcd_text_oben = "Settings        ";
-    lcd_text_unten = "";
-
-    motor.standby();
-
-    writeLCD();
 }
 
 void toHigh() {
@@ -176,12 +156,12 @@ void writeLCD() {
 }
 
 void debug() {
-    Serial.printf("Button Left: %i\n", button_left.read());
-    Serial.printf("Button Middle: %i\n", button_middle.read());
-    Serial.printf("Button Right: %i\n\n", button_right.read());
+    Serial.printf("Button Left: %i\n", button_left.get());
+    Serial.printf("Button Middle: %i\n", button_middle.get());
+    Serial.printf("Button Right: %i\n", button_right.get());
 //
-    Serial.printf("Motor FIN %i\n", motor.getFin());
-    Serial.printf("Motor RIN %i\n\n", motor.getRin());
+//    Serial.printf("Motor FIN %i\n", motor.getFin());
+//    Serial.printf("Motor RIN %i\n\n", motor.getRin());
 //
 //    Serial.printf("LED Indicator: %i\n", led_indicator.get());
 //    Serial.printf("LED Left: %i\n", led_left.get());
@@ -191,6 +171,7 @@ void debug() {
 
 //    Serial.printf("LCD_first: %s\n", lcd_text_oben.c_str());
 //    Serial.printf("LCD_second: %s\n\n", lcd_text_unten.c_str());
-    Serial.printf("STATE: %i\n", state);
-    Serial.printf("SUB STATE: %i\n\n", sub_state);
+    Serial.printf("MAIN_STATE: %i\n", mainState);
+    Serial.printf("SIGNAL_STATE: %i\n", signalState);
+    Serial.printf("STATE_SETTINGS: %i\n\n", settingsState);
 }

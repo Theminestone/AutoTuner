@@ -16,11 +16,13 @@
 
 // Signal
 #define SIGNAL_IN PA1
-#define MAX_CYCLES 1000
+#define MAX_CYCLES 500 // 1000
 #define SAMPLE_RATE 100 // 100 us
 
 // Battery
 #define BATTERY_LEVEL PA6
+#define Rv 800000
+#define RL 2000000
 
 // Motor
 #define MOTOR_FIN PB0
@@ -29,13 +31,30 @@
 // Buzzer
 #define BUZZER
 
-// Notes
-#define E2 82.41
-#define A2 220 // 110.00
-#define D3 146.83
-#define G3 196.00
-#define H3 246.94
-#define E4 329.63
-#define TOLERANZ 3 // +-
+// Notes https://www.profdong.com/elc4351/notefreqs.html
+
+#define TUNE 440;
+#define TOLERANZ 5 // +-
+
+#define E2_440 164.81
+#define A2_440 220.00
+#define D3_440 293.66
+#define G3_440 392.00
+#define H3_440 493.88
+#define E4_440 659.25
+
+#define E2_442 165.56
+#define A2_442 221.00
+#define D3_442 295.00
+#define G3_442 393.78
+#define H3_442 496.13
+#define E4_442 662.25
+
+#define E2 164.81
+#define A2 220.00
+#define D3 293.66
+#define G3 392.00
+#define H3 493.88
+#define E4 659.25
 
 #endif //STM32_CONSTANTS_H

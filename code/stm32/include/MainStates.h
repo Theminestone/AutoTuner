@@ -1,11 +1,8 @@
-#ifndef STM32_STATES_H
-#define STM32_STATES_H
+#ifndef STM32_MAINSTATES_H
+#define STM32_MAINSTATES_H
 
 #include "Globals.h"
-
-void read();
-
-void process();
+#include "STATE.h"
 
 void idle();
 
@@ -21,8 +18,6 @@ void tune_h3();
 
 void tune_e4();
 
-void settings();
-
 void toHigh();
 
 void toLow();
@@ -33,4 +28,4 @@ void writeLCD();
 
 void debug();
 
-#endif //STM32_STATES_H
+#endif //STM32_MAINSTATES_H

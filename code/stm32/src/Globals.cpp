@@ -18,5 +18,6 @@ Signal signal_in(SIGNAL_IN, MAX_CYCLES, SAMPLE_RATE);
 String lcd_text_oben = "                ";
 String lcd_text_unten = "                ";
 
-STATE state = IDLE;
-SUB_STATE sub_state = WAIT;
+MAIN_STATE mainState = STATE_IDLE;
+SIGNAL_STATE signalState = SIGNAL_WAIT;
+SETTINGS_STATE settingsState = SETTINGS_MAIN;

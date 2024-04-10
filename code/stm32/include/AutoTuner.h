@@ -2,6 +2,7 @@
 #define STM32_AUTOTUNER_H
 
 #include <Arduino.h>
+#include "Constants.h"
 #include <LiquidCrystal_I2C.h>
 #include <ezBuzzer.h>
 
@@ -106,15 +107,21 @@ private:
 
     double _deltaT1T3{};
     double _deltaT3T5{};
-    double _deltaT5T7{};
-    double _deltaT7T9{};
+    double _deltaT5T7 = 0;
+    double _deltaT7T9 = 0;
 
     double _deltaT2T4{};
     double _deltaT4T6{};
-    double _deltaT6T8{};
-    double _deltaT8T10{};
+    double _deltaT6T8 = 0;
+    double _deltaT8T10 = 0;
+
+    double _sumDelta{};
 
     uint8_t _points{}; // for P calc
+
+    uint8_t _tolerance;
+
+    uint16_t _tune;
 
     double _frequency;
 
@@ -136,22 +143,14 @@ public:
     void calcFrequency();
 
     [[nodiscard]] uint32_t readADC() const;
+
+    [[nodiscard]] uint8_t getTolerance() const;
+
+    void setTolerance(uint8_t tolerance);
+
+    [[nodiscard]] uint16_t getTune() const;
+
+    void setTune(uint16_t tune);
 };
 
-enum STATE {
-    IDLE = 0,
-    TUNE_E2,
-    TUNE_A2,
-    TUNE_D3,
-    TUNE_G3,
-    TUNE_H3,
-    TUNE_E4,
-    SETTINGS
-};
-
-enum SUB_STATE {
-    READ = 0,
-    PROCESS,
-    WAIT,
-};
 #endif //STM32_AUTOTUNER_H
