@@ -11,5 +11,8 @@ void read() {
 
 void process() {
     signal_in.calcFrequency();
-    signalState = SIGNAL_READ;
 }
+
+void toSignalRead() {
+    signalState = SIGNAL_READ;
+};

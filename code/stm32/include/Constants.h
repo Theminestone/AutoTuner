@@ -21,8 +21,10 @@
 
 // Battery
 #define BATTERY_LEVEL PA6
-#define Rv 800000
-#define RL 2000000
+#define Rv 1820000
+#define RL 1180000
+#define BATTERY_MAX 8.4 // V
+#define BATTERY_MIN 6.6 // V
 
 // Motor
 #define MOTOR_FIN PB0
@@ -50,11 +52,18 @@
 #define H3_442 496.13
 #define E4_442 662.25
 
-#define E2 164.81
-#define A2 220.00
-#define D3 293.66
-#define G3 392.00
-#define H3 493.88
-#define E4 659.25
+//#define E2 164.81
+//#define A2 220.00
+//#define D3 293.66
+//#define G3 392.00
+//#define H3 493.88
+//#define E4 659.25
+
+#define E2 82.41
+#define A2 110.00
+#define D3 146.83
+#define G3 196.00
+#define H3 246.94
+#define E4 329.63
 
 #endif //STM32_CONSTANTS_H

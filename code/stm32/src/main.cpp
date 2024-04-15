@@ -5,6 +5,7 @@
 #include "SettingsState.h"
 
 HardwareTimer *timer = new HardwareTimer(TIM3);
+HardwareTimer *timer_wait = new HardwareTimer(TIM4);
 
 void setup() {
     Serial.begin(9600);
@@ -16,7 +17,9 @@ void setup() {
 
     analogReadResolution(8); // adc 8 - Bit
 
+
     timer->setOverflow(SAMPLE_RATE, MICROSEC_FORMAT); // µs
+    timer_wait->setOverflow(500000, MICROSEC_FORMAT);
 }
 
 void loop() {
@@ -95,15 +98,19 @@ void loop() {
     // State in Substate (Interupt)
     switch (signalState) {
         case SIGNAL_READ:
+            timer_wait->pause();
             timer->resume();
             timer->attachInterrupt(read);
             break;
         case SIGNAL_PROCESS:
             timer->pause();
+            timer_wait->resume();
+            timer_wait->attachInterrupt(toSignalRead);
             process();
             break;
         case SIGNAL_WAIT:
             timer->pause();
+            timer_wait->pause();
             break;
     }
 //    debug();

@@ -28,7 +28,7 @@ void tune_e2() {
         } else {
             inTune();
         }
-    }
+    } else { inTune(); }
 }
 
 void tune_a2() {
@@ -62,7 +62,7 @@ void tune_d3() {
         } else {
             inTune();
         }
-    }
+    } else { inTune(); }
 }
 
 void tune_g3() {
@@ -79,7 +79,7 @@ void tune_g3() {
         } else {
             inTune();
         }
-    }
+    } else { inTune(); }
 }
 
 void tune_h3() {
@@ -96,7 +96,7 @@ void tune_h3() {
         } else {
             inTune();
         }
-    }
+    } else { inTune(); }
 }
 
 void tune_e4() {
@@ -113,7 +113,7 @@ void tune_e4() {
         } else {
             inTune();
         }
-    }
+    } else { inTune(); }
 }
 
 void toHigh() {
@@ -143,7 +143,7 @@ void inTune() {
     led_middle.on();
     led_right.off();
 
-    motor.breakk();
+    motor.standby();
 }
 
 void writeLCD() {
@@ -159,6 +159,9 @@ void debug() {
     Serial.printf("Button Left: %i\n", button_left.get());
     Serial.printf("Button Middle: %i\n", button_middle.get());
     Serial.printf("Button Right: %i\n", button_right.get());
+
+//    Serial.printf("Tolerance %i\n", signal_in.getTolerance());
+
 //
 //    Serial.printf("Motor FIN %i\n", motor.getFin());
 //    Serial.printf("Motor RIN %i\n\n", motor.getRin());

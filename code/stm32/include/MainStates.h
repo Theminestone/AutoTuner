@@ -3,6 +3,7 @@
 
 #include "Globals.h"
 #include "STATE.h"
+#include "SettingsState.h"
 
 void idle();
 

@@ -7,4 +7,6 @@ void read();
 
 void process();
 
+void toSignalRead();
+
 #endif //STM32_SIGNALSTATE_H

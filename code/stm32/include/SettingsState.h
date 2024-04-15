@@ -14,4 +14,6 @@ void changeTune();
 
 void showBattery();
 
+uint8_t calcBattery();
+
 #endif //STM32_SETTINGSSTATE_H
