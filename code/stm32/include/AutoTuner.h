@@ -4,7 +4,6 @@
 #include <Arduino.h>
 #include "Constants.h"
 #include <LiquidCrystal_I2C.h>
-#include <ezBuzzer.h>
 
 #include <vector>
 #include <cmath>
@@ -151,6 +150,24 @@ public:
     [[nodiscard]] uint16_t getTune() const;
 
     void setTune(uint16_t tune);
+};
+
+class Buzzer {
+private:
+    uint8_t _pin;
+    uint8_t _state;
+    uint16_t _note;
+
+public:
+    Buzzer(uint8_t pin, uint8_t state);
+
+    [[nodiscard]] uint8_t getState() const;
+
+    void setState(uint8_t state);
+
+    void setNote(uint16_t note);
+
+    void play() const;
 };
 
 #endif //STM32_AUTOTUNER_H

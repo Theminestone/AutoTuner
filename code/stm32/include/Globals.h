@@ -7,6 +7,8 @@
 
 extern LiquidCrystal_I2C lcd;
 
+extern Buzzer buzzer;
+
 extern Button button_left;
 extern Button button_right;
 extern Button button_middle;
@@ -15,6 +17,11 @@ extern LED led_indicator;
 extern LED led_left;
 extern LED led_right;
 extern LED led_middle;
+
+extern LED custom1;
+extern LED custom2;
+extern LED custom3;
+extern LED custom4;
 
 extern Motor motor;
 

@@ -25,6 +25,8 @@ void toLow();
 
 void inTune();
 
+void inIdle();
+
 void writeLCD();
 
 void debug();

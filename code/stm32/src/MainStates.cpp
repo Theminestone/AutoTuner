@@ -4,19 +4,25 @@ void idle() {
     lcd_text_oben = "                ";
     lcd_text_unten = "                ";
 
-    led_indicator.blink();
+    led_indicator.on();
     led_left.off();
     led_middle.off();
     led_right.off();
 
+    custom1.off();
+    custom2.off();
+    custom3.off();
+    custom4.off();
+
     lcd.clear();
 
     motor.standby();
+
 }
 
 void tune_e2() {
     lcd_text_oben = "Tuning E2: ...";
-    lcd_text_unten = String(signal_in.getFrequency()) + "Hz->" + E2 + "Hz";
+    lcd_text_unten = String(signal_in.getFrequency()) + "Hz->" + E2 + "Hz ";
 
     writeLCD();
 
@@ -28,7 +34,10 @@ void tune_e2() {
         } else {
             inTune();
         }
-    } else { inTune(); }
+    } else { inIdle(); }
+
+    buzzer.setNote((uint16_t) E2);
+    buzzer.play();
 }
 
 void tune_a2() {
@@ -45,7 +54,10 @@ void tune_a2() {
         } else {
             inTune();
         }
-    } else { inTune(); }
+    } else { inIdle(); }
+
+    buzzer.setNote((uint16_t) A2);
+    buzzer.play();
 }
 
 void tune_d3() {
@@ -62,7 +74,10 @@ void tune_d3() {
         } else {
             inTune();
         }
-    } else { inTune(); }
+    } else { inIdle(); }
+
+    buzzer.setNote((uint16_t) D3);
+    buzzer.play();
 }
 
 void tune_g3() {
@@ -79,7 +94,10 @@ void tune_g3() {
         } else {
             inTune();
         }
-    } else { inTune(); }
+    } else { inIdle(); }
+
+    buzzer.setNote((uint16_t) G3);
+    buzzer.play();
 }
 
 void tune_h3() {
@@ -96,7 +114,10 @@ void tune_h3() {
         } else {
             inTune();
         }
-    } else { inTune(); }
+    } else { inIdle(); }
+
+    buzzer.setNote((uint16_t) H3);
+    buzzer.play();
 }
 
 void tune_e4() {
@@ -113,7 +134,10 @@ void tune_e4() {
         } else {
             inTune();
         }
-    } else { inTune(); }
+    } else { inIdle(); }
+
+    buzzer.setNote((uint16_t) E4);
+    buzzer.play();
 }
 
 void toHigh() {
@@ -122,6 +146,11 @@ void toHigh() {
     led_left.off();
     led_middle.off();
     led_right.on();
+
+    custom1.off();
+    custom2.off();
+    custom3.off();
+    custom4.off();
 
     motor.reverse();
 }
@@ -133,6 +162,11 @@ void toLow() {
     led_middle.off();
     led_right.off();
 
+    custom1.off();
+    custom2.off();
+    custom3.off();
+    custom4.off();
+
     motor.forward();
 }
 
@@ -143,12 +177,30 @@ void inTune() {
     led_middle.on();
     led_right.off();
 
+    custom1.off();
+    custom2.off();
+    custom3.off();
+    custom4.off();
+
+    motor.standby();
+}
+
+void inIdle() {
+    led_indicator.off();
+    led_left.blink();
+    led_middle.blink();
+    led_right.blink();
+
+    custom1.off();
+    custom2.off();
+    custom3.off();
+    custom4.off();
+
     motor.standby();
 }
 
 void writeLCD() {
 
-//    lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print(lcd_text_oben);
     lcd.setCursor(0, 1);
@@ -156,9 +208,9 @@ void writeLCD() {
 }
 
 void debug() {
-    Serial.printf("Button Left: %i\n", button_left.get());
-    Serial.printf("Button Middle: %i\n", button_middle.get());
-    Serial.printf("Button Right: %i\n", button_right.get());
+//    Serial.printf("Button Left: %i\n", button_left.get());
+//    Serial.printf("Button Middle: %i\n", button_middle.get());
+//    Serial.printf("Button Right: %i\n", button_right.get());
 
 //    Serial.printf("Tolerance %i\n", signal_in.getTolerance());
 

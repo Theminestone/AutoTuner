@@ -6,6 +6,7 @@
 
 HardwareTimer *timer = new HardwareTimer(TIM3);
 HardwareTimer *timer_wait = new HardwareTimer(TIM4);
+HardwareTimer *batteryLevel = new HardwareTimer(TIM2);
 
 void setup() {
     Serial.begin(9600);
@@ -17,9 +18,12 @@ void setup() {
 
     analogReadResolution(8); // adc 8 - Bit
 
-
     timer->setOverflow(SAMPLE_RATE, MICROSEC_FORMAT); // µs
-    timer_wait->setOverflow(500000, MICROSEC_FORMAT);
+    timer_wait->setOverflow(250000, MICROSEC_FORMAT);
+    batteryLevel->setOverflow(5 * 1000000, MICROSEC_FORMAT);
+
+    batteryLevel->resume();
+    batteryLevel->attachInterrupt(batteryCheck);
 }
 
 void loop() {
@@ -89,13 +93,22 @@ void loop() {
                     break;
                 case SETTINGS_BATTERY:
                     showBattery();
+                    if (button_middle.get()) { settingsState = SETTINGS_BUZZER; }
+                    break;
+                case SETTINGS_BUZZER:
+                    changeBuzzer();
                     if (button_middle.get()) { settingsState = SETTINGS_MAIN; }
                     break;
             }
             break;
+        case STATE_BATTERY_CRITICAL:
+            timer->pause();
+            timer_wait->pause();
+            batteryLevel->pause();
+            batteryCritical();
+            break;
     }
 
-    // State in Substate (Interupt)
     switch (signalState) {
         case SIGNAL_READ:
             timer_wait->pause();
@@ -113,5 +126,5 @@ void loop() {
             timer_wait->pause();
             break;
     }
-//    debug();
+    debug();
 }

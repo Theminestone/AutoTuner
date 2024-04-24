@@ -95,18 +95,18 @@ void Signal::calcFrequency() {
 
     _deltaT1T3 = _xP3 * _sample_rate - _xP1 * _sample_rate;
     _deltaT3T5 = _xP5 * _sample_rate - _xP3 * _sample_rate;
-//    _deltaT5T7 = _xP7 * _sample_rate - _xP5 * _sample_rate;
-//    _deltaT7T9 = _xP9 * _sample_rate - _xP7 * _sample_rate;
+    _deltaT5T7 = _xP7 * _sample_rate - _xP5 * _sample_rate;
+    _deltaT7T9 = _xP9 * _sample_rate - _xP7 * _sample_rate;
 
     _deltaT2T4 = _xP4 * _sample_rate - _xP2 * _sample_rate;
     _deltaT4T6 = _xP6 * _sample_rate - _xP4 * _sample_rate;
-//    _deltaT6T8 = _xP8 * _sample_rate - _xP6 * _sample_rate;
-//    _deltaT8T10 = _xP10 * _sample_rate - _xP8 * _sample_rate;
+    _deltaT6T8 = _xP8 * _sample_rate - _xP6 * _sample_rate;
+    _deltaT8T10 = _xP10 * _sample_rate - _xP8 * _sample_rate;
 
     _sumDelta = _deltaT1T3 + _deltaT3T5 + _deltaT5T7 + _deltaT7T9 + _deltaT2T4 + _deltaT4T6 + _deltaT6T8 + _deltaT8T10;
 
-    if (_sumDelta != 0) {
-        _frequency = 1 / (((_sumDelta) / 4) * 0.000001);
+    if (_sumDelta > 0) {
+        _frequency = 1 / (((_sumDelta) / 8) * 0.000001);
     } else { _frequency = 0; }
     clearVector();
 }
