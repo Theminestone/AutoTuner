@@ -21,11 +21,11 @@ void Buzzer::setNote(uint16_t note) {
 void Buzzer::play() const {
     if (_state) {
         tone(_pin, _note);
-//        Serial.println("Tone");
+        Serial.println("Tone");
     }
     else {
         noTone(_pin);
-//        Serial.println("no Tone");
+        Serial.println("no Tone");
     }
 }
 

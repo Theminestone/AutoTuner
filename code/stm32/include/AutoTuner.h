@@ -116,11 +116,11 @@ private:
 
     double _sumDelta{};
 
-    uint8_t _points{}; // for P calc
+    uint8_t _points{};
 
-    uint8_t _tolerance;
+    uint8_t _tolerance{};
 
-    uint16_t _tune;
+    uint16_t _tune{};
 
     double _frequency;
 
@@ -133,7 +133,7 @@ public:
 
     uint8_t getWave(uint8_t i);
 
-    [[nodiscard]] double getFrequency() const;
+    [[nodiscard]] uint16_t getFrequency() const;
 
     void createWave();
 

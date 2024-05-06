@@ -37,7 +37,6 @@ bool Signal::isReady() {
 }
 
 void Signal::calcPoints() {
-//    auto min_value = *min_element(_wave.begin(), _wave.end());
     auto max_value = *max_element(_wave.begin(), _wave.end());
 
     _pUP = max_value * 0.75;
@@ -111,14 +110,12 @@ void Signal::calcFrequency() {
     clearVector();
 }
 
-double Signal::getFrequency() const {
-//    return round(_frequency);
-    return _frequency;
+uint16_t Signal::getFrequency() const {
+    return round(_frequency);
 }
 
 void Signal::clearVector() {
     _wave.clear();
-//    _wave.swap(_wave);
 }
 
 uint8_t Signal::getTolerance() const {

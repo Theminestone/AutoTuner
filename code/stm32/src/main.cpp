@@ -9,16 +9,16 @@ HardwareTimer *timer_wait = new HardwareTimer(TIM4);
 HardwareTimer *batteryLevel = new HardwareTimer(TIM2);
 
 void setup() {
-    Serial.begin(9600);
+    Serial.begin(115200);
 
     motor.standby();
     lcd.init();
     lcd.backlight();
     lcd.clear();
 
-    analogReadResolution(8); // adc 8 - Bit
+    analogReadResolution(8);
 
-    timer->setOverflow(SAMPLE_RATE, MICROSEC_FORMAT); // µs
+    timer->setOverflow(SAMPLE_RATE, MICROSEC_FORMAT);
     timer_wait->setOverflow(250000, MICROSEC_FORMAT);
     batteryLevel->setOverflow(5 * 1000000, MICROSEC_FORMAT);
 
@@ -85,7 +85,7 @@ void loop() {
                     break;
                 case SETTINGS_CHANGE_TOLERANCE:
                     changeTolerance();
-                    if (button_middle.get()) { settingsState = SETTINGS_CHANGE_TUNE; }
+                    if (button_middle.get()) { settingsState = SETTINGS_BATTERY; }
                     break;
                 case SETTINGS_CHANGE_TUNE:
                     changeTune();

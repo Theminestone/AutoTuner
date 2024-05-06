@@ -96,7 +96,7 @@ void showBattery() {
     custom4.on();
 
     lcd_text_oben;
-    lcd_text_unten = "Battery: " + String(calcBattery()) + "%";
+    lcd_text_unten = "Battery: " + String(calcBattery()) + " % ";
     writeLCD();
 }
 
@@ -106,24 +106,15 @@ uint8_t calcBattery() {
 
     double VBat;
     double Vout;
-    uint32_t BatteryProcent;
 
-    uint32_t a = analogRead(BATTERY_LEVEL);
-//    double a = 255;
-
-    Vout = a * 3.3 / 4096; // analog --> Spannung
+    Vout = analogRead(BATTERY_LEVEL) * 3.3 / 4096; // analog --> Spannung
     VBat = (Vout * (Rv + RL) / RL); // Spannung Batterie
 
-    BatteryProcent = (uint32_t) ((VBat - BATTERY_MIN) * (100 - 0) / (BATTERY_MAX - BATTERY_MIN));
+    uint32_t BatteryProcent = (uint32_t) ((VBat - BATTERY_MIN) * (100 - 0) / (BATTERY_MAX - BATTERY_MIN));
 
     analogReadResolution(8);
 
     return BatteryProcent;
-
-    /*
-     * Bei 3V3 (255) --> Batterie: 8V4 100%
-     * Bei 2V6 (200) --> Batterie: 6V6 0%
-     * */
 };
 
 void batteryCheck() {

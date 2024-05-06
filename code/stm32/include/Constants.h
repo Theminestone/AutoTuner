@@ -1,7 +1,6 @@
 #ifndef STM32_CONSTANTS_H
 #define STM32_CONSTANTS_H
 
-// LEDS
 #define LED_INDICATOR PC13
 #define LED_LEFT PA8
 #define LED_MIDDLE PA9
@@ -12,37 +11,30 @@
 #define CUSTOM2 PB4
 #define CUSTOM1 PB5
 
-// Buttons
 #define BUTTON_LEFT PB13
 #define BUTTON_RIGHT PB15
 #define BUTTON_MIDDLE PB14
 
-#define DEBOUNCETIME 5 // ms
+#define DEBOUNCETIME 5
 
-// Signal
 #define SIGNAL_IN PA2
-#define MAX_CYCLES 1000 // 1000
-#define SAMPLE_RATE 100 // 100 us
+#define MAX_CYCLES 1000
+#define SAMPLE_RATE 100
 
-// Battery
+#define TUNE 440
+#define TOLERANZ 8
+
 #define BATTERY_LEVEL PA6
 #define Rv 1820000 // 1MEG + 820k
 #define RL 1180000 // 1MEG + 118k
-#define BATTERY_MAX 8.4 // V
-#define BATTERY_MIN 6.4 // V
+#define BATTERY_MAX 8.4
+#define BATTERY_MIN 6.4
 
-// Motor
 #define MOTOR_FIN PB0
 #define MOTOR_RIN PB1
 
-// Buzzer
 #define BUZZER_PIN PB8
 #define BUZZER_STATE false
-
-// Notes https://www.profdong.com/elc4351/notefreqs.html
-
-#define TUNE 440;
-#define TOLERANZ 6 // +-
 
 //#define E2_440 164.81
 //#define A2_440 220.00
