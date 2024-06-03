@@ -6,7 +6,7 @@
 
 HardwareTimer *timer = new HardwareTimer(TIM3);
 HardwareTimer *timer_wait = new HardwareTimer(TIM4);
-HardwareTimer *batteryLevel = new HardwareTimer(TIM2);
+HardwareTimer *batteryLevel  = new HardwareTimer(TIM2);
 
 void setup() {
     Serial.begin(115200);

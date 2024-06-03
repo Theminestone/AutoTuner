@@ -106,8 +106,12 @@ void Signal::calcFrequency() {
 
     if (_sumDelta > 0) {
         _frequency = 1 / (((_sumDelta) / 8) * 0.000001);
-    } else { _frequency = 0; }
+    } else {
+        _frequency = 0;
+    }
+
     clearVector();
+
 }
 
 uint16_t Signal::getFrequency() const {

@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -27415,7 +27415,6 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="LED_LEFT" library="L-53GD" deviceset="L-53GD" device="" value=""/>
 <part name="LED_RIGHT" library="L-53GD" deviceset="L-53GD" device="" value=""/>
 <part name="LED_MIDDLE" library="L-53GD" deviceset="L-53GD" device="" value=""/>
-<part name="GND42" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="SELECT" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-12MM" package3d_urn="urn:adsk.eagle:package:40164/2"/>
 <part name="RIGHT" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-12MM" package3d_urn="urn:adsk.eagle:package:40164/2"/>
@@ -28150,15 +28149,13 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <wire x1="7.62" y1="119.38" x2="93.98" y2="119.38" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="93.98" y1="119.38" x2="93.98" y2="172.72" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="93.98" y1="172.72" x2="7.62" y2="172.72" width="0.2032" layer="98" style="shortdash"/>
-<text x="10.16" y="121.92" size="2.54" layer="98">Battery charger ok</text>
-<text x="137.16" y="81.28" size="0.8128" layer="98">Maximum voltage: 4.2V * (2M / (0.8M + 2M)) =
-Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
-<wire x1="134.62" y1="177.8" x2="172.72" y2="177.8" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="172.72" y1="177.8" x2="172.72" y2="73.66" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="172.72" y1="73.66" x2="134.62" y2="73.66" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="134.62" y1="73.66" x2="134.62" y2="177.8" width="0.2032" layer="98" style="shortdash"/>
-<text x="137.16" y="76.2" size="2.54" layer="98">Battery level</text>
-<text x="195.58" y="68.58" size="2.54" layer="98">Voltage Source Selection ok</text>
+<text x="10.16" y="121.92" size="2.54" layer="98">Battery charger</text>
+<wire x1="134.62" y1="152.4" x2="172.72" y2="152.4" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="172.72" y1="152.4" x2="172.72" y2="60.96" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="172.72" y1="60.96" x2="134.62" y2="60.96" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="134.62" y1="60.96" x2="134.62" y2="152.4" width="0.2032" layer="98" style="shortdash"/>
+<text x="137.16" y="63.5" size="2.54" layer="98">Battery level</text>
+<text x="190.5" y="68.58" size="2.54" layer="98">Voltage Source Selection</text>
 <wire x1="187.96" y1="111.76" x2="187.96" y2="66.04" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="187.96" y1="66.04" x2="241.3" y2="66.04" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="241.3" y1="66.04" x2="241.3" y2="111.76" width="0.2032" layer="98" style="shortdash"/>
@@ -28167,12 +28164,12 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <wire x1="175.26" y1="124.46" x2="261.62" y2="124.46" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="261.62" y1="124.46" x2="261.62" y2="167.64" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="261.62" y1="167.64" x2="175.26" y2="167.64" width="0.2032" layer="98" style="shortdash"/>
-<text x="177.8" y="127" size="2.54" layer="98">5V --&gt; 3V3 ok</text>
+<text x="177.8" y="127" size="2.54" layer="98">5V --&gt; 3V3</text>
 <wire x1="5.08" y1="106.68" x2="5.08" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="5.08" y1="50.8" x2="129.54" y2="50.8" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="129.54" y1="50.8" x2="129.54" y2="106.68" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="129.54" y1="106.68" x2="5.08" y2="106.68" width="0.2032" layer="98" style="shortdash"/>
-<text x="7.62" y="53.34" size="2.54" layer="98">Voltage Boost Converter ok</text>
+<text x="7.62" y="53.34" size="2.54" layer="98">Voltage Boost Converter</text>
 </plain>
 <instances>
 <instance part="BATTERYCHARGER" gate="G$1" x="43.18" y="149.86" smashed="yes">
@@ -28216,12 +28213,12 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="39.5986" y="161.29" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="34.798" y="161.29" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="C7" gate="G$1" x="162.56" y="124.46" smashed="yes" rot="R180">
-<attribute name="NAME" x="161.036" y="124.079" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="161.036" y="129.159" size="1.778" layer="96" rot="R180"/>
+<instance part="C7" gate="G$1" x="162.56" y="99.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="161.036" y="98.679" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="161.036" y="103.759" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND13" gate="1" x="142.24" y="99.06" smashed="yes">
-<attribute name="VALUE" x="139.7" y="96.52" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="142.24" y="73.66" smashed="yes">
+<attribute name="VALUE" x="139.7" y="71.12" size="1.778" layer="96"/>
 </instance>
 <instance part="GND14" gate="1" x="213.36" y="76.2" smashed="yes">
 <attribute name="VALUE" x="210.82" y="73.66" size="1.778" layer="96"/>
@@ -28241,9 +28238,9 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="SHEET" x="248.92" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="180.34" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="R29" gate="G$1" x="152.4" y="134.62" smashed="yes">
-<attribute name="NAME" x="148.59" y="136.1186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="148.59" y="131.318" size="1.778" layer="96"/>
+<instance part="R29" gate="G$1" x="152.4" y="109.22" smashed="yes">
+<attribute name="NAME" x="148.59" y="110.7186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="148.59" y="105.918" size="1.778" layer="96"/>
 </instance>
 <instance part="GND53" gate="1" x="215.9" y="137.16" smashed="yes">
 <attribute name="VALUE" x="213.36" y="134.62" size="1.778" layer="96"/>
@@ -28318,21 +28315,21 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="82.3214" y="135.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="87.122" y="135.89" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R9" gate="G$1" x="142.24" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.7414" y="107.95" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.542" y="107.95" size="1.778" layer="96" rot="R90"/>
+<instance part="R9" gate="G$1" x="142.24" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.7414" y="82.55" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.542" y="82.55" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R10" gate="G$1" x="142.24" y="124.46" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.7414" y="120.65" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.542" y="120.65" size="1.778" layer="96" rot="R90"/>
+<instance part="R10" gate="G$1" x="142.24" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.7414" y="95.25" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.542" y="95.25" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R20" gate="G$1" x="142.24" y="144.78" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.7414" y="140.97" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.542" y="140.97" size="1.778" layer="96" rot="R90"/>
+<instance part="R20" gate="G$1" x="142.24" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.7414" y="115.57" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.542" y="115.57" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R21" gate="G$1" x="142.24" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="140.7414" y="153.67" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="145.542" y="153.67" size="1.778" layer="96" rot="R90"/>
+<instance part="R21" gate="G$1" x="142.24" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="140.7414" y="128.27" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="145.542" y="128.27" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SCHOTTKY" gate="G$1" x="66.04" y="88.9" smashed="yes">
 <attribute name="NAME" x="68.58" y="89.3826" size="1.778" layer="95"/>
@@ -28409,12 +28406,12 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="142.24" y1="106.68" x2="142.24" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="81.28" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="104.14" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="121.92" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="104.14" x2="142.24" y2="104.14" width="0.1524" layer="91"/>
-<junction x="142.24" y="104.14"/>
+<wire x1="142.24" y1="78.74" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="96.52" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<junction x="142.24" y="78.74"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -28496,8 +28493,8 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="162.56" x2="142.24" y2="165.1" width="0.1524" layer="91"/>
-<label x="142.24" y="165.1" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="142.24" y1="137.16" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
+<label x="142.24" y="139.7" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -28609,36 +28606,36 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="116.84" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="91.44" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BATTERY_LEVEL" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="134.62" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="134.62" x2="162.56" y2="137.16" width="0.1524" layer="91"/>
-<junction x="162.56" y="134.62"/>
-<label x="162.56" y="137.16" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="157.48" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="109.22" x2="162.56" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="109.22" x2="162.56" y2="111.76" width="0.1524" layer="91"/>
+<junction x="162.56" y="109.22"/>
+<label x="162.56" y="111.76" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="152.4" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="127" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="139.7" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="134.62" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="114.3" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="129.54" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
-<junction x="142.24" y="134.62"/>
+<wire x1="142.24" y1="104.14" x2="142.24" y2="109.22" width="0.1524" layer="91"/>
+<junction x="142.24" y="109.22"/>
 </segment>
 </net>
 </nets>
@@ -28651,49 +28648,44 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <wire x1="180.34" y1="147.32" x2="180.34" y2="172.72" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="180.34" y1="172.72" x2="142.24" y2="172.72" width="0.2032" layer="98" style="shortdash"/>
 <text x="144.78" y="149.86" size="2.54" layer="98">Display</text>
-<wire x1="91.44" y1="172.72" x2="91.44" y2="132.08" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="91.44" y1="132.08" x2="137.16" y2="132.08" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="137.16" y1="132.08" x2="137.16" y2="172.72" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="91.44" y1="172.72" x2="91.44" y2="137.16" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="91.44" y1="137.16" x2="137.16" y2="137.16" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="137.16" y1="137.16" x2="137.16" y2="172.72" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="137.16" y1="172.72" x2="91.44" y2="172.72" width="0.2032" layer="98" style="shortdash"/>
-<text x="96.52" y="137.16" size="2.54" layer="98">Audio Jack ok</text>
-<wire x1="213.36" y1="114.3" x2="213.36" y2="88.9" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="213.36" y1="88.9" x2="256.54" y2="88.9" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="256.54" y1="88.9" x2="256.54" y2="114.3" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="256.54" y1="114.3" x2="213.36" y2="114.3" width="0.2032" layer="98" style="shortdash"/>
-<text x="226.06" y="91.44" size="2.54" layer="98">DC - Motor ok</text>
+<text x="93.98" y="139.7" size="2.54" layer="98">Audio Jack</text>
+<wire x1="208.28" y1="114.3" x2="208.28" y2="91.44" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="208.28" y1="91.44" x2="256.54" y2="91.44" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="256.54" y1="91.44" x2="256.54" y2="114.3" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="256.54" y1="114.3" x2="208.28" y2="114.3" width="0.2032" layer="98" style="shortdash"/>
+<text x="210.82" y="93.98" size="2.54" layer="98">DC - Motor</text>
 <wire x1="185.42" y1="175.26" x2="185.42" y2="116.84" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="185.42" y1="116.84" x2="256.54" y2="116.84" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="256.54" y1="116.84" x2="256.54" y2="175.26" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="256.54" y1="175.26" x2="185.42" y2="175.26" width="0.2032" layer="98" style="shortdash"/>
-<text x="187.96" y="119.38" size="2.54" layer="98">Power IN ok</text>
-<wire x1="91.44" y1="68.58" x2="91.44" y2="33.02" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="91.44" y1="33.02" x2="160.02" y2="33.02" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="160.02" y1="33.02" x2="160.02" y2="68.58" width="0.2032" layer="98" style="shortdash"/>
-<text x="93.98" y="35.56" size="2.54" layer="98">LEDs</text>
-<wire x1="91.44" y1="68.58" x2="160.02" y2="68.58" width="0.2032" layer="98" style="shortdash"/>
+<text x="187.96" y="119.38" size="2.54" layer="98">Power IN</text>
+<wire x1="109.22" y1="88.9" x2="109.22" y2="53.34" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="109.22" y1="53.34" x2="177.8" y2="53.34" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="177.8" y1="53.34" x2="177.8" y2="88.9" width="0.2032" layer="98" style="shortdash"/>
+<text x="111.76" y="55.88" size="2.54" layer="98">LEDs</text>
+<wire x1="109.22" y1="88.9" x2="177.8" y2="88.9" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="7.62" y1="124.46" x2="7.62" y2="58.42" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="7.62" y1="58.42" x2="88.9" y2="58.42" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="88.9" y1="58.42" x2="88.9" y2="124.46" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="88.9" y1="124.46" x2="7.62" y2="124.46" width="0.2032" layer="98" style="shortdash"/>
 <text x="15.24" y="63.5" size="2.54" layer="98">Buttons</text>
-<wire x1="12.7" y1="7.62" x2="88.9" y2="7.62" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="88.9" y1="7.62" x2="88.9" y2="55.88" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="88.9" y1="55.88" x2="12.7" y2="55.88" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="12.7" y1="55.88" x2="12.7" y2="7.62" width="0.2032" layer="98" style="shortdash"/>
-<text x="15.24" y="10.16" size="2.54" layer="98">Test Points</text>
-<wire x1="99.06" y1="127" x2="99.06" y2="101.6" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="99.06" y1="101.6" x2="142.24" y2="101.6" width="0.2032" layer="98" style="shortdash"/>
-<wire x1="142.24" y1="101.6" x2="142.24" y2="127" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="99.06" y1="127" x2="99.06" y2="104.14" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="99.06" y1="104.14" x2="142.24" y2="104.14" width="0.2032" layer="98" style="shortdash"/>
+<wire x1="142.24" y1="104.14" x2="142.24" y2="127" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="142.24" y1="127" x2="99.06" y2="127" width="0.2032" layer="98" style="shortdash"/>
-<text x="114.3" y="104.14" size="2.54" layer="98">Batterie ok</text>
+<text x="101.6" y="106.68" size="2.54" layer="98">Batterie</text>
 </plain>
 <instances>
-<instance part="AUDIO_JACK" gate="G$1" x="127" y="157.48" smashed="yes" rot="R180">
-<attribute name="NAME" x="132.08" y="149.86" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="132.08" y="167.64" size="1.778" layer="96" rot="R180"/>
+<instance part="AUDIO_JACK" gate="G$1" x="127" y="160.02" smashed="yes" rot="R180">
+<attribute name="NAME" x="132.08" y="152.4" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="132.08" y="170.18" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND19" gate="1" x="114.3" y="144.78" smashed="yes">
-<attribute name="VALUE" x="111.76" y="142.24" size="1.778" layer="96"/>
+<instance part="GND19" gate="1" x="114.3" y="147.32" smashed="yes">
+<attribute name="VALUE" x="111.76" y="144.78" size="1.778" layer="96"/>
 </instance>
 <instance part="DISPLAY" gate="A" x="147.32" y="165.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="156.21" y="156.845" size="1.778" layer="95" rot="R180"/>
@@ -28758,35 +28750,32 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <attribute name="NAME" x="224.79" y="151.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="229.87" y="151.638" size="1.778" layer="96"/>
 </instance>
-<instance part="R30" gate="G$1" x="144.78" y="60.96" smashed="yes" rot="R180">
-<attribute name="NAME" x="148.59" y="59.4614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="148.59" y="64.262" size="1.778" layer="96" rot="R180"/>
+<instance part="R30" gate="G$1" x="162.56" y="81.28" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="79.7814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="166.37" y="84.582" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R31" gate="G$1" x="144.78" y="53.34" smashed="yes" rot="R180">
-<attribute name="NAME" x="148.59" y="51.8414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="148.59" y="56.642" size="1.778" layer="96" rot="R180"/>
+<instance part="R31" gate="G$1" x="162.56" y="73.66" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="72.1614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="166.37" y="76.962" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R32" gate="G$1" x="144.78" y="45.72" smashed="yes" rot="R180">
-<attribute name="NAME" x="148.59" y="44.2214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="148.59" y="49.022" size="1.778" layer="96" rot="R180"/>
+<instance part="R32" gate="G$1" x="162.56" y="66.04" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.37" y="64.5414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="166.37" y="69.342" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND37" gate="1" x="154.94" y="38.1" smashed="yes">
-<attribute name="VALUE" x="152.4" y="35.56" size="1.778" layer="96"/>
+<instance part="GND37" gate="1" x="172.72" y="58.42" smashed="yes">
+<attribute name="VALUE" x="170.18" y="55.88" size="1.778" layer="96"/>
 </instance>
-<instance part="LED_LEFT" gate="G$1" x="127" y="60.96" smashed="yes">
-<attribute name="NAME" x="123.9012" y="65.4558" size="1.27" layer="95"/>
-<attribute name="VALUE" x="123.444" y="57.658" size="1.27" layer="96"/>
+<instance part="LED_LEFT" gate="G$1" x="144.78" y="81.28" smashed="yes">
+<attribute name="NAME" x="141.6812" y="85.7758" size="1.27" layer="95"/>
+<attribute name="VALUE" x="141.224" y="77.978" size="1.27" layer="96"/>
 </instance>
-<instance part="LED_RIGHT" gate="G$1" x="127" y="53.34" smashed="yes">
-<attribute name="NAME" x="123.9012" y="57.8358" size="1.27" layer="95"/>
-<attribute name="VALUE" x="123.444" y="50.038" size="1.27" layer="96"/>
+<instance part="LED_RIGHT" gate="G$1" x="144.78" y="73.66" smashed="yes">
+<attribute name="NAME" x="141.6812" y="78.1558" size="1.27" layer="95"/>
+<attribute name="VALUE" x="141.224" y="70.358" size="1.27" layer="96"/>
 </instance>
-<instance part="LED_MIDDLE" gate="G$1" x="127" y="45.72" smashed="yes">
-<attribute name="NAME" x="123.9012" y="50.2158" size="1.27" layer="95"/>
-<attribute name="VALUE" x="123.444" y="42.418" size="1.27" layer="96"/>
-</instance>
-<instance part="GND42" gate="1" x="22.86" y="38.1" smashed="yes" rot="R180">
-<attribute name="VALUE" x="25.4" y="40.64" size="1.778" layer="96" rot="R180"/>
+<instance part="LED_MIDDLE" gate="G$1" x="144.78" y="66.04" smashed="yes">
+<attribute name="NAME" x="141.6812" y="70.5358" size="1.27" layer="95"/>
+<attribute name="VALUE" x="141.224" y="62.738" size="1.27" layer="96"/>
 </instance>
 <instance part="SELECT" gate="G$1" x="68.58" y="93.98" smashed="yes">
 <attribute name="NAME" x="68.58" y="95.504" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -28828,12 +28817,12 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <instance part="BATTERIE" gate="-2" x="116.84" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="114.3" y="120.142" size="1.524" layer="95" rot="R180"/>
 </instance>
-<instance part="DC-MOTOR" gate="-1" x="233.68" y="104.14" smashed="yes" rot="R180">
-<attribute name="NAME" x="231.14" y="104.902" size="1.524" layer="95" rot="R180"/>
-<attribute name="VALUE" x="234.442" y="102.743" size="1.778" layer="96" rot="R180"/>
+<instance part="DC-MOTOR" gate="-1" x="228.6" y="104.14" smashed="yes" rot="R180">
+<attribute name="NAME" x="226.06" y="104.902" size="1.524" layer="95" rot="R180"/>
+<attribute name="VALUE" x="229.362" y="102.743" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="DC-MOTOR" gate="-2" x="233.68" y="109.22" smashed="yes" rot="R180">
-<attribute name="NAME" x="231.14" y="109.982" size="1.524" layer="95" rot="R180"/>
+<instance part="DC-MOTOR" gate="-2" x="228.6" y="109.22" smashed="yes" rot="R180">
+<attribute name="NAME" x="226.06" y="109.982" size="1.524" layer="95" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -28849,8 +28838,8 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <segment>
 <pinref part="AUDIO_JACK" gate="G$1" pin="SLEEVE"/>
 <pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="119.38" y1="152.4" x2="114.3" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="152.4" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="154.94" x2="114.3" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="154.94" x2="114.3" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="USB-B" gate="G$1" pin="SHIELD1"/>
@@ -28887,22 +28876,18 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="D2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="60.96" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="81.28" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 <pinref part="R30" gate="G$1" pin="1"/>
 <pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="53.34" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="45.72" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
-<junction x="154.94" y="53.34"/>
+<wire x1="172.72" y1="73.66" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="66.04" x2="172.72" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
+<junction x="172.72" y="73.66"/>
 <pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="45.72" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
-<junction x="154.94" y="45.72"/>
-</segment>
-<segment>
-<wire x1="22.86" y1="20.32" x2="22.86" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="167.64" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<junction x="172.72" y="66.04"/>
 </segment>
 <segment>
 <pinref part="GND44" gate="1" pin="GND"/>
@@ -28943,17 +28928,13 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <net name="SIGNAL_IN" class="0">
 <segment>
 <pinref part="AUDIO_JACK" gate="G$1" pin="TIP_2"/>
-<wire x1="119.38" y1="162.56" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
-<label x="109.22" y="162.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="119.38" y1="165.1" x2="114.3" y2="165.1" width="0.1524" layer="91"/>
+<label x="109.22" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="AUDIO_JACK" gate="G$1" pin="RING_1"/>
-<wire x1="114.3" y1="162.56" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="154.94" x2="114.3" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="154.94" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
-<junction x="114.3" y="162.56"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="20.32" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
-<label x="66.04" y="35.56" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="114.3" y1="165.1" x2="109.22" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="157.48" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="157.48" x2="114.3" y2="165.1" width="0.1524" layer="91"/>
+<junction x="114.3" y="165.1"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -28962,22 +28943,18 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <wire x1="149.86" y1="162.56" x2="160.02" y2="162.56" width="0.1524" layer="91"/>
 <label x="160.02" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="35.56" y1="20.32" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
-<label x="35.56" y="35.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="MOTORA" class="0">
 <segment>
-<wire x1="236.22" y1="109.22" x2="243.84" y2="109.22" width="0.1524" layer="91"/>
-<label x="243.84" y="109.22" size="1.27" layer="95" xref="yes"/>
+<wire x1="231.14" y1="109.22" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
+<label x="238.76" y="109.22" size="1.27" layer="95" xref="yes"/>
 <pinref part="DC-MOTOR" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="MOTORB" class="0">
 <segment>
-<wire x1="236.22" y1="104.14" x2="243.84" y2="104.14" width="0.1524" layer="91"/>
-<label x="243.84" y="104.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="231.14" y1="104.14" x2="238.76" y2="104.14" width="0.1524" layer="91"/>
+<label x="238.76" y="104.14" size="1.27" layer="95" xref="yes"/>
 <pinref part="DC-MOTOR" gate="-1" pin="S"/>
 </segment>
 </net>
@@ -29025,49 +29002,45 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <segment>
 <pinref part="R30" gate="G$1" pin="2"/>
 <pinref part="LED_LEFT" gate="G$1" pin="C"/>
-<wire x1="132.08" y1="60.96" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R31" gate="G$1" pin="2"/>
 <pinref part="LED_RIGHT" gate="G$1" pin="C"/>
-<wire x1="132.08" y1="53.34" x2="139.7" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="73.66" x2="157.48" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R32" gate="G$1" pin="2"/>
 <pinref part="LED_MIDDLE" gate="G$1" pin="C"/>
-<wire x1="132.08" y1="45.72" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="66.04" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_RIGHT" class="0">
 <segment>
-<wire x1="119.38" y1="53.34" x2="111.76" y2="53.34" width="0.1524" layer="91"/>
-<label x="111.76" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<label x="129.54" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="LED_RIGHT" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="LED_MIDDLE" class="0">
 <segment>
-<wire x1="119.38" y1="45.72" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
-<label x="111.76" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
+<label x="129.54" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="LED_MIDDLE" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="LED_LEFT" class="0">
 <segment>
-<wire x1="119.38" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
-<label x="111.76" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="137.16" y1="81.28" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
+<label x="129.54" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="LED_LEFT" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
-<segment>
-<wire x1="50.8" y1="20.32" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
-<label x="50.8" y="35.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
 <segment>
 <pinref part="RIGHT" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
@@ -29086,12 +29059,6 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="160.02" x2="200.66" y2="162.56" width="0.1524" layer="91"/>
 <label x="200.66" y="162.56" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="SIGNAL_OPAMP" class="0">
-<segment>
-<wire x1="81.28" y1="20.32" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
-<label x="81.28" y="35.56" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="BUTTON_2" class="0">
@@ -29154,12 +29121,12 @@ Minimum voltage: 3.0V * (2M / (0.8M + 2M)) = </text>
 <sheet>
 <description>Motor Steuerung / Signal Verarbeitung</description>
 <plain>
-<text x="22.86" y="111.76" size="2.54" layer="98">OPV: Vu = 1,1 - ∞ok</text>
+<text x="22.86" y="111.76" size="2.54" layer="98">OPV: Vu = 1,1 - ∞</text>
 <wire x1="114.3" y1="157.48" x2="114.3" y2="111.76" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="114.3" y1="111.76" x2="256.54" y2="111.76" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="256.54" y1="111.76" x2="256.54" y2="157.48" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="256.54" y1="157.48" x2="114.3" y2="157.48" width="0.2032" layer="98" style="shortdash"/>
-<text x="116.84" y="114.3" size="2.54" layer="98">DC MOTOR H-Bridge ok</text>
+<text x="116.84" y="114.3" size="2.54" layer="98">DC MOTOR H-Bridge</text>
 <wire x1="106.68" y1="167.64" x2="106.68" y2="104.14" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="106.68" y1="104.14" x2="15.24" y2="104.14" width="0.2032" layer="98" style="shortdash"/>
 <wire x1="15.24" y1="104.14" x2="15.24" y2="167.64" width="0.2032" layer="98" style="shortdash"/>
